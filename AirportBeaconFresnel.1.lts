@@ -1,0 +1,2462 @@
+#ORACAD Database File - Version 7.2
+#LightTools 8.4.0 
+#Build: 2016.02.12.1145.716831 [x64]
+$ORALensDatabaseManagerObj create -> $ORALensDatabaseManagerObj_0
+{
+	restoreObjectCounter: 17;
+	setCurrentColor: "FOREGROUND";
+	setCurrentPointSize: 1;
+	setWidthAsInt: 1;
+	setUnits: "Millimeters";
+	setPolarizationOn: "No";
+	setRDM: "Radius";
+	setFociRenderMode: "No";
+	setHiddenWireframeRenderMode: "Yes";
+	setSaveUserMaterial: "Yes";
+	setSaveUserCoating: "Yes";
+	setSaveUserBSDF: "Yes";
+	setEnableLTSFileVersioning: "Yes";
+	setTitle: "";
+	setObjectDeleteConfirm: "No";
+	setDiscardChangesConfirm: "No";
+	setSwitchOptEngineConfirm: "Yes";
+	setClearOptimizationResultsConfirm: "Yes";
+	setRaytraceNumFanRays: 11;
+	setRaytraceFanSpacing: "Linear";
+	setRaytraceDefaultStartingPointClassification: "Automatic";
+	setRaytraceNumGridCols: 11;
+	setRaytraceNumGridRows: 11;
+	setRaytraceGridSpacing: "Linear";
+	setGUIPrecision: 5;
+	setGUIPrecisionFormat: "General";
+	setRepairDoSimplify: 1;
+	setRepairSimplifyTol: 0.;
+	setRepairDoStitch: 1;
+	setRepairStitchMinTol: 0.;
+	setRepairStitchMaxTol: 0.;
+	setRepairDoGeombuild: 1;
+	setRepairGeombuildTol: 0.;
+	setRepairDoRegularize: 1;
+	setImperfectGeometryRaytraceMode: 0;
+	setDefaultLensAutoID: "No";
+	setDefaultClipRaysToBoundary: "Yes";
+	setMaxDraw3DTextureCells: 100000;
+	setMaxDraw2DTextureCells: 300000;
+	setConvert3DTextureToRealGeom: "No";
+	setTrimTextureToOffsetSurf: "No";
+	setDefaultHitLimit: 1000;
+	setSolidWorksIdleTimeoutValue: 60;
+	setSolidWorksDisplayNameOption: "SolidWorks";
+	setDefaultRandomAccessRDS: "Yes";
+	setIgnoreEntityLevelRTASettings: "No";
+	setApproximatedRayTrace: "Precision";
+	setRayTraceAccelLevel: "Fastest";
+	setCurrentLayerNumber: "1";
+	getOpticalPropertiesManager -> $OpticalPropertiesManager_0
+	{
+		$OpticalProperties create -> $OpticalProperties_0
+		{
+			setName: "Source";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_0
+			{
+				setRed: 20;
+				setGreen: 60;
+				setBlue: 107;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_0;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_0
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_0
+				{
+					setReflectance: 0.;
+					setTransmittance: 1.;
+				} setAmplitude: $ORARTRayAmplitudeObj_0;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_0
+				{
+					setRefractMode: "TIR";
+				} setDirection: $ORASpecularRayDirectionObj_0;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_0;
+		} restoreOpticalProperty: $OpticalProperties_0;
+		$OpticalProperties create -> $OpticalProperties_1
+		{
+			setName: "Beacon";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_1
+			{
+				setRed: 128;
+				setGreen: 0;
+				setBlue: 255;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_1;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_1
+			{
+				$ORAFresnelLossRayAmplitudeObj create -> $ORAFresnelLossRayAmplitudeObj_0
+				{
+				} setAmplitude: $ORAFresnelLossRayAmplitudeObj_0;
+				$ORADominantRayDirectionObj create -> $ORADominantRayDirectionObj_0
+				{
+					setRefractMode: "Split";
+					setProbabilisticRaytracing: "Yes";
+					setThreshold: 0.5;
+				} setDirection: $ORADominantRayDirectionObj_0;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_1;
+		} restoreOpticalProperty: $OpticalProperties_1;
+		$OpticalProperties create -> $OpticalProperties_2
+		{
+			setName: "Refractive Surfaces";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_2
+			{
+				setRed: 128;
+				setGreen: 0;
+				setBlue: 255;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_2;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_2
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_1
+				{
+					setReflectance: 0.;
+					setTransmittance: 1.;
+				} setAmplitude: $ORARTRayAmplitudeObj_1;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_1
+				{
+					setRefractMode: "TIR";
+				} setDirection: $ORASpecularRayDirectionObj_1;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_2;
+		} restoreDefaultOpticalProperty: $OpticalProperties_2;
+		$OpticalProperties create -> $OpticalProperties_3
+		{
+			setName: "Reflective Surfaces";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_3
+			{
+				setRed: 0;
+				setGreen: 64;
+				setBlue: 64;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_3;
+			$ORASimpleMirrorOpticalPropertiesObj create -> $ORASimpleMirrorOpticalPropertiesObj_0
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_2
+				{
+					setReflectance: 1.;
+					setTransmittance: 0.;
+				} setAmplitude: $ORARTRayAmplitudeObj_2;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_2
+				{
+					setRefractMode: "Reflect";
+				} setDirection: $ORASpecularRayDirectionObj_2;
+			} restoreProperty: $ORASimpleMirrorOpticalPropertiesObj_0;
+		} restoreDefaultOpticalProperty: $OpticalProperties_3;
+		$OpticalProperties create -> $OpticalProperties_4
+		{
+			setName: "Surfaces on Sources";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_4
+			{
+				setRed: 255;
+				setGreen: 128;
+				setBlue: 64;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_4;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_3
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_3
+				{
+					setReflectance: 0.;
+					setTransmittance: 1.;
+				} setAmplitude: $ORARTRayAmplitudeObj_3;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_3
+				{
+					setRefractMode: "TIR";
+				} setDirection: $ORASpecularRayDirectionObj_3;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_3;
+		} restoreDefaultOpticalProperty: $OpticalProperties_4;
+		$OpticalProperties create -> $OpticalProperties_5
+		{
+			setName: "Imported Geometry";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_5
+			{
+				setRed: 184;
+				setGreen: 115;
+				setBlue: 230;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_5;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_4
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_4
+				{
+					setReflectance: 0.;
+					setTransmittance: 1.;
+				} setAmplitude: $ORARTRayAmplitudeObj_4;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_4
+				{
+					setRefractMode: "TIR";
+				} setDirection: $ORASpecularRayDirectionObj_4;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_4;
+		} restoreDefaultOpticalProperty: $OpticalProperties_5;
+		$OpticalProperties create -> $OpticalProperties_6
+		{
+			setName: "Optical Edge Surfaces";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_6
+			{
+				setRed: 157;
+				setGreen: 98;
+				setBlue: 106;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_6;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_5
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_5
+				{
+					setReflectance: 0.;
+					setTransmittance: 0.;
+				} setAmplitude: $ORARTRayAmplitudeObj_5;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_5
+				{
+					setRefractMode: "Absorb";
+				} setDirection: $ORASpecularRayDirectionObj_5;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_5;
+		} restoreDefaultOpticalProperty: $OpticalProperties_6;
+		$OpticalProperties create -> $OpticalProperties_7
+		{
+			setName: "Mechanical Surfaces";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_7
+			{
+				setRed: 109;
+				setGreen: 123;
+				setBlue: 146;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_7;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_6
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_6
+				{
+					setReflectance: 0.;
+					setTransmittance: 0.;
+				} setAmplitude: $ORARTRayAmplitudeObj_6;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_6
+				{
+					setRefractMode: "Mechanical";
+				} setDirection: $ORASpecularRayDirectionObj_6;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_6;
+		} restoreDefaultOpticalProperty: $OpticalProperties_7;
+		$OpticalProperties create -> $OpticalProperties_8
+		{
+			setName: "User-Created Zones";
+			$ORAColorComponentObj create -> $ORAColorComponentObj_8
+			{
+				setRed: 20;
+				setGreen: 60;
+				setBlue: 107;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} restoreColorComponent: $ORAColorComponentObj_8;
+			$ORAAmplDirOpticalPropertiesObj create -> $ORAAmplDirOpticalPropertiesObj_7
+			{
+				$ORARTRayAmplitudeObj create -> $ORARTRayAmplitudeObj_7
+				{
+					setReflectance: 0.;
+					setTransmittance: 1.;
+				} setAmplitude: $ORARTRayAmplitudeObj_7;
+				$ORASpecularRayDirectionObj create -> $ORASpecularRayDirectionObj_7
+				{
+					setRefractMode: "TIR";
+				} setDirection: $ORASpecularRayDirectionObj_7;
+			} restoreProperty: $ORAAmplDirOpticalPropertiesObj_7;
+		} restoreDefaultOpticalProperty: $OpticalProperties_8;
+	} ;
+	getUserMaterialManager -> $ORAUserMaterialManagerObj_0
+	{
+		$ORAUserGlassInstanceObj create -> $ORAUserGlassInstanceObj_0;
+		initObject: $ORAUserGlassInstanceObj_0;
+		$ORAUserGlassInstanceObj_0
+		{
+			setColor: "FOREGROUND";
+			setWidth: "1";
+			setLayerNumber: "1";
+			setName: "air";
+			$ORALaurentIndexObj create -> $ORALaurentIndexObj_0
+			{
+				setIndexCoeff5: 0.;
+				setIndexCoeff4: 0.;
+				setIndexCoeff3: 0.;
+				setIndexCoeff2: 0.;
+				setIndexCoeff1: 0.;
+				setIndexCoeff0: 1.;
+			} restoreIndexObj: $ORALaurentIndexObj_0;
+restoreSerializedAbsorptionObj:
+ORAStartData;
+0000180000004f70746963616c44656e736974794162736f727074696f6e0100000000000000000000000000010100000001000000140000004f70746963616c2044656e7369747920446174610000000000010000000400010000000002000000010000000003000000000000000000000000003081400000000000000000
+ORAEndData;
+ORAReadForeignData;
+		} restoreObject: $ORAUserGlassInstanceObj_0;
+		$ORAMaterialInstanceObj create -> $ORAMaterialInstanceObj_0;
+		initObject: $ORAMaterialInstanceObj_0;
+		$ORAMaterialInstanceObj_0
+		{
+			setColor: "FOREGROUND";
+			setWidth: "1";
+			setLayerNumber: "1";
+			setName: "Aluminum";
+			setYoungsModulus: 69.;
+			setSpecificGravity: 2.71;
+		} restoreObject: $ORAMaterialInstanceObj_0;
+		$ORAUserGlassInstanceObj create -> $ORAUserGlassInstanceObj_1;
+		initObject: $ORAUserGlassInstanceObj_1;
+		$ORAUserGlassInstanceObj_1
+		{
+			setColor: "FOREGROUND";
+			setWidth: "1";
+			setLayerNumber: "1";
+			setName: "K6250_Aviation_Red";
+			$ORAGMSellmeierIndexObj create -> $ORAGMSellmeierIndexObj_0
+			{
+				setIndexCoeff5: 99.19279595;
+				setIndexCoeff4: 1.01;
+				setIndexCoeff3: 0.0206;
+				setIndexCoeff2: 0.208;
+				setIndexCoeff1: 0.00625;
+				setIndexCoeff0: 0.983;
+			} restoreIndexObj: $ORAGMSellmeierIndexObj_0;
+restoreSerializedAbsorptionObj:
+ORAStartData;
+0000160000005472616e736d697373696f6e4162736f727074696f6e0100000000000000000000000000010100000001000000110000005472616e736d697373696f6e20446174610000000000650000000400010000000002000000010000000003000000000000000000000000000069404db1b49d00d4ee3e04000400000005000000
+0000000000406a40a531d60eb187d73e040006000000070000000000000000806b406b4eb91d75cfe53e040008000000090000000000000000c06c40dafe3adcb353d83e04000a0000000b0000000000000000006e4086ba59cd8470e63e04000c0000000d0000000000000000406f40d71003fad047e13e04000e0000000f000000
+000000000040704014e257cdef0bda3e040010000000110000000000000000e070405f196547f47cb73e0400120000001300000000000000008071406c5819ae8a47e43e040014000000150000000000000000207240479bfc79c7e7dd3e040016000000170000000000000000c07240b47106774e50c63e04001800000019000000
+0000000000607340aa33ce11bf83bb3e04001a0000001b0000000000000000007440ae5b4e531564d53e04001c0000001d0000000000000000a074409ffe793b3e31bd3e04001e0000001f0000000000000000407540df92e4054d55ae3e040020000000210000000000000000e075400ee94359f089d23e04002200000023000000
+0000000000807640d3e882b87a67c73e0400240000002500000000000000002077400cb8df888b2fdc3e040026000000270000000000000000c077402305e485536adf3e0400280000002900000000000000006078409c1042595b25c63e04002a0000002b0000000000000000007940e821c79417b2cd3e04002c0000002d000000
+0000000000a07940d0c002772487dd3e04002e0000002f0000000000000000407a408dedb5a0f7c6903e040030000000310000000000000000e07a40210ec81462e4db3e040032000000330000000000000000807b40c3b136dfeb18d53e040034000000350000000000000000207c402b69a4292b1be03e04003600000037000000
+0000000000c07c40358a38df807dd13e040038000000390000000000000000607d402d431cebe236da3e04003a0000003b0000000000000000007e405f196547f47cd73e04003c0000003d0000000000000000a07e406e3cf1ff57dbdc3e04003e0000003f0000000000000000407f40e014f3ffec3fd93e04004000000041000000
+0000000000e07f401b15b4a06262e43e0400420000004300000000000000004080409ef419ab28b9fe3e040044000000450000000000000000908040b9782e426788193f040046000000470000000000000000e080401ff5d72b2cb82f3f040048000000490000000000000000308140d7868a71fe26443f04004a0000004b000000
+000000000080814094f6065f984c553f04004c0000004d0000000000000000d08140bc79aa436e866b3f04004e0000004f0000000000000000208240b7627fd93d79983f040050000000510000000000000000708240b0726891ed7ccf3f040052000000530000000000000000c0824004560e2db29de73f04005400000055000000
+0000000000108340448b6ce7fba9ed3f0400560000005700000000000000006083400ad7a3703d0aef3f040058000000590000000000000000b083403108ac1c5a64ef3f04005a0000005b000000000000000000844085eb51b81e85ef3f04005c0000005d00000000000000005084402fdd24068195ef3f04005e0000005f000000
+0000000000a08440d9cef753e3a5ef3f040060000000610000000000000000f08440d9cef753e3a5ef3f040062000000630000000000000000408540ae47e17a14aeef3f040064000000650000000000000000908540d9cef753e3a5ef3f040066000000670000000000000000e0854004560e2db29def3f04006800000069000000
+000000000030864004560e2db29def3f04006a0000006b00000000000000008086405a643bdf4f8def3f04006c0000006d0000000000000000d0864085eb51b81e85ef3f04006e0000006f0000000000000000208740b0726891ed7cef3f040070000000710000000000000000708740068195438b6cef3f04007200000073000000
+0000000000c087403108ac1c5a64ef3f0400740000007500000000000000001088408716d9cef753ef3f040076000000770000000000000000608840dd2406819543ef3f040078000000790000000000000000b0884008ac1c5a643bef3f04007a0000007b00000000000000000089405eba490c022bef3f04007c0000007d000000
+0000000000508940b4c876be9f1aef3f04007e0000007f0000000000000000a089400ad7a3703d0aef3f040080000000810000000000000000f089408b6ce7fba9f1ee3f040082000000830000000000000000408a400c022b8716d9ee3f040084000000850000000000000000908a4037894160e5d0ee3f04008600000087000000
+0000000000e08a4037894160e5d0ee3f040088000000890000000000000000308b4037894160e5d0ee3f04008a0000008b0000000000000000808b40105839b4c876ee3f04008c0000008d0000000000000000d08b403bdf4f8d976eee3f04008e0000008f0000000000000000208c40666666666666ee3f04009000000091000000
+0000000000708c40bc7493180456ee3f040092000000930000000000000000c08c40e7fba9f1d24dee3f040094000000950000000000000000108d401283c0caa145ee3f040096000000970000000000000000608d403d0ad7a3703dee3f040098000000990000000000000000b08d406891ed7c3f35ee3f04009a0000009b000000
+0000000000008e40931804560e2dee3f04009c0000009d0000000000000000508e40be9f1a2fdd24ee3f04009e0000009f0000000000000000a08e40e9263108ac1cee3f0400a0000000a10000000000000000f08e40e9263108ac1cee3f0400a2000000a30000000000000000408f4014ae47e17a14ee3f0400a4000000a5000000
+0000000000908f4014ae47e17a14ee3f0400a6000000a70000000000000000e08f403f355eba490cee3f0400a8000000a900000000000000001890403f355eba490cee3f0400aa000000ab00000000000000004090403f355eba490cee3f0400ac000000ad00000000000000006890406abc74931804ee3f0400ae000000af000000
+00000000009090406abc74931804ee3f0400b0000000b10000000000000000b890406abc74931804ee3f0400b2000000b30000000000000000e090406abc74931804ee3f0400b4000000b500000000000000000891406abc74931804ee3f0400b6000000b700000000000000003091406abc74931804ee3f0400b8000000b9000000
+00000000005891406abc74931804ee3f0400ba000000bb00000000000000008091403f355eba490cee3f0400bc000000bd0000000000000000a891403f355eba490cee3f0400be000000bf0000000000000000d091403f355eba490cee3f0400c0000000c10000000000000000f8914014ae47e17a14ee3f0400c2000000c3000000
+000000000020924014ae47e17a14ee3f0400c4000000c5000000000000000048924014ae47e17a14ee3f0400c6000000c70000000000000000709240e9263108ac1cee3f0400c8000000c90000000000000000989240be9f1a2fdd24ee3f0400ca000000cb0000000000000000c09240be9f1a2fdd24ee3f000000000000084000
+000000000000000000000000000000000000b09e955c67440040ae47e17a14aeef3faa93b34ff931483fae47e17a14aeef3fcd3e75d03784e53f2af0504890f3d43f43dee040a7441440cbe271bc5f16bdbfd37225b1928bb6bf50fd399e2be7584094d9e576013e6240a8c9074b0a56654082060000
+ORAEndData;
+ORAReadForeignData;
+		} restoreObject: $ORAUserGlassInstanceObj_1;
+	} ;
+	getStudioManager -> $ORAStudioManagerObj_0
+	{
+		getLightDB -> $ORALightDBObj_0
+		{
+			$PRRAmbientLight create -> $PRRAmbientLight_0;
+			initObject: $PRRAmbientLight_0;
+			$PRRAmbientLight_0
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "ambient light";
+				setPosition:  { 0. 0. 0.  } ;
+				setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+				setEnabledLight: "No";
+			} restoreObject: $PRRAmbientLight_0;
+		} ;
+	} ;
+	getGeometryManager -> $ORAPartDBObj_0
+	{
+		$SweptSolid create -> $SweptSolid_0;
+		initObject: $SweptSolid_0;
+		$SweptSolid_0
+		{
+			setColor: "FOREGROUND";
+			setWidth: "1";
+			setLayerNumber: "1";
+			setName: "Airport_Beacon";
+			setPosition:  { 0. 0. 0.  } ;
+			setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+			setIsRayTraceable: "Yes";
+			setMaterialName: "K6250_Aviation_Red_USER";
+			setDoubleSidedness: "No";
+			setPreciseRayTracingMode: "Accelerated";
+			setOverridesRTAPreference: "Yes";
+			setTurboAccuracyMode: "Yes";
+			setIndividualRTALevel: "Most Accurate";
+			getCSGTree -> $ORACSGTreeObj_0;
+			$SweptPrimitive create -> $SweptPrimitive_0
+			{
+				setPosition:  { 0. 0. 0.  } ;
+				setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+				setName: "SweptPrimitive_1";
+				restoreSweepType: "Revolved";
+				restoreIsSolid: "Yes";
+				restoreMakeFillets: "No";
+				restoreFilletRadius: 0.05;
+				$Curve2dList create -> $Curve2dList_0
+				{
+					$Polyline2d create -> $Polyline2d_0
+					{
+						setName: "SweptSurface_1";
+						restorePoints: [256,2] { -55. 0. -54.99896795591267 0.2257054155388836 -54.99587182365067 0.4514108310777673 -54.99071160321402 0.6771162466166509 -54.9834872946027 0.9028216621555345 
+-54.97419889781671 1.128527077694418 -54.96284641285607 1.354232493233302 -54.94942983972076 1.579937908772185 -54.93394917841079 1.805643324311069 -54.91640442892616 2.031348739849953 
+-54.89679559126687 2.257054155388836 -54.87512266543291 2.48275957092772 -54.85138565142429 2.708464986466604 -54.825584549241 2.934170402005487 -54.79771935888306 3.159875817544371 
+-54.76779008035044 3.385581233083254 -54.73579671364318 3.611286648622138 -54.70173925876124 3.836992064161022 -54.66561771570464 4.062697479699906 -54.62743208447338 4.288402895238789 
+-54.58718236506746 4.514108310777672 -54.54486855748688 4.739813726316556 -54.50049066173163 4.96551914185544 -54.45404867780172 5.191224557394324 -54.40554260569714 5.416929972933207 
+-54.35497244541791 5.64263538847209 -54.30233819696401 5.868340804010974 -54.24763986033545 6.094046219549858 -54.19087743553222 6.319751635088742 -54.13205092255434 6.545457050627626 
+-54.07116032140178 6.771162466166508 -54.00820563207458 6.996867881705392 -53.9431868545727 7.222573297244276 -53.87610398889616 7.44827871278316 -53.80695703504496 7.673984128322044 
+-53.7357459930191 7.899689543860927 -53.66247086281857 8.125394959399811 -53.58713164444338 8.351100374938694 -53.50972833789353 8.576805790477577 -53.43026094316902 8.802511206016462 
+-53.34872946026984 9.028216621555345 -53.265133889196 9.253922037094229 -53.1794742299475 9.479627452633112 -53.09175048252434 9.705332868171995 -53.00196264692651 9.93103828371088 
+-55. 9.94847489153215 -54.88801136210492 10.22252641083955 -54.77297967682709 10.49657793014695 -54.65490494416652 10.77062944945435 -54.53378716412319 11.04468096876175 
+-54.40962633669711 11.31873248806916 -54.28242246188829 11.59278400737656 -54.15217553969671 11.86683552668396 -54.01888557012238 12.14088704599136 -53.8825525531653 12.41493856529876 
+-53.74317648882548 12.68899008460616 -53.6007573771029 12.96304160391356 -53.45529521799757 13.23709312322096 -53.3067900115095 13.51114464252836 -53.15524175763868 13.78519616183576 
+-53.0006504563851 14.05924768114316 -55. 14.07669574027781 -54.81815615031157 14.39199060580558 -54.63228440615427 14.70728547133336 -54.44238476752811 15.02258033686113 
+-54.24845723443309 15.33787520238891 -54.05050180686921 15.65317006791668 -53.84851848483647 15.96846493344446 -53.64250726833487 16.28375979897223 -53.4324681573644 16.59905466450001 
+-53.21840115192508 16.91434953002779 -53.00030625201689 17.22964439555556 -55. 17.24709545851622 -54.76566473344656 17.57923126062594 -54.52685979471971 17.91136706273567 
+-54.28358518381945 18.24350286484539 -54.03584090074578 18.57563866695512 -53.7836269454987 18.90777446906485 -53.5269433180782 19.23991027117457 -53.2657900184843 19.5720460732843 
+-53.00016704671699 19.90418187539402 -55. 19.92163415318093 -54.68209312558687 20.31166591253573 -54.35802251231385 20.70169767189054 -54.02778816018095 21.09172943124535 
+-53.69139006918815 21.48176119060015 -53.34882823933545 21.87179294995496 -53.00010267062287 22.26182470930977 -55. 22.27927754889833 -54.61451409577743 22.70229624765646 
+-54.22177776735532 23.12531494641458 -53.82179101473368 23.54833364517271 -53.41455383791251 23.97135234393084 -53.0000662368918 24.39437104268896 -55. 24.41182420022988 
+-54.51437339250262 24.89795720297006 -54.01917143852448 25.38409020571024 -53.51439413806557 25.87022320845042 -53.0000414911259 26.3563562111906 -55. 26.37380958468455 
+-54.51244319753446 26.82618535772577 -54.01659470685897 27.278561130767 -53.51245452797351 27.73093690380822 -53.0000226608781 28.18331267684944 -55. 28.20076621467247 
+-54.34633364213811 28.76715090025957 -53.67966956087938 29.33353558584668 -53.00000775622384 29.89992027143378 -55. 29.91737393932775 -54.34495702373666 30.4529632513077 
+-53.67829131905071 30.98855256328765 -53.00000288594215 31.5241418752676 -55. 31.54159558566388 -54.34384473025716 32.05091049549765 -53.67717911322216 32.56022540533142 
+-53.00000314889499 33.06954031516519 -55. 33.08699402326671 -54.01079147865119 33.81682559259059 -53.00000106222763 34.54665716191447 -55. 34.56411088822608 
+-54.00992357626382 35.26399185941538 -53.00000025359356 35.96387283060469 -55. 35.98132656397313 -54.00918476326299 36.6546544161434 -53.00000002187424 37.32798226831367 
+-55. 37.34543600370429 -54.76563759201099 37.5 -50. 37.5 -50. -37.5 -54.76563759201099 -37.5 
+-55. -37.34543600370429 -53.00000002187424 -37.32798226831367 -54.00918476326299 -36.6546544161434 -55. -35.98132656397313 -53.00000025359356 -35.96387283060469 
+-54.00992357626382 -35.26399185941538 -55. -34.56411088822608 -53.00000106222763 -34.54665716191447 -54.01079147865119 -33.81682559259059 -55. -33.08699402326671 
+-53.00000314889499 -33.06954031516519 -53.67717911322216 -32.56022540533142 -54.34384473025716 -32.05091049549765 -55. -31.54159558566388 -53.00000288594215 -31.5241418752676 
+-53.67829131905071 -30.98855256328765 -54.34495702373666 -30.4529632513077 -55. -29.91737393932775 -53.00000775622384 -29.89992027143378 -53.67966956087938 -29.33353558584668 
+-54.34633364213811 -28.76715090025957 -55. -28.20076621467247 -53.0000226608781 -28.18331267684944 -53.51245452797351 -27.73093690380822 -54.01659470685897 -27.278561130767 
+-54.51244319753446 -26.82618535772577 -55. -26.37380958468455 -53.0000414911259 -26.3563562111906 -53.51439413806557 -25.87022320845042 -54.01917143852448 -25.38409020571024 
+-54.51437339250262 -24.89795720297006 -55. -24.41182420022988 -53.0000662368918 -24.39437104268896 -53.41455383791251 -23.97135234393084 -53.82179101473368 -23.54833364517271 
+-54.22177776735532 -23.12531494641458 -54.61451409577743 -22.70229624765646 -55. -22.27927754889833 -53.00010267062287 -22.26182470930977 -53.34882823933545 -21.87179294995496 
+-53.69139006918815 -21.48176119060015 -54.02778816018095 -21.09172943124535 -54.35802251231385 -20.70169767189054 -54.68209312558687 -20.31166591253573 -55. -19.92163415318093 
+-53.00016704671699 -19.90418187539402 -53.2657900184843 -19.5720460732843 -53.5269433180782 -19.23991027117457 -53.7836269454987 -18.90777446906485 -54.03584090074578 -18.57563866695512 
+-54.28358518381945 -18.24350286484539 -54.52685979471971 -17.91136706273567 -54.76566473344656 -17.57923126062594 -55. -17.24709545851622 -53.00030625201689 -17.22964439555556 
+-53.21840115192508 -16.91434953002779 -53.4324681573644 -16.59905466450001 -53.64250726833487 -16.28375979897223 -53.84851848483647 -15.96846493344446 -54.05050180686921 -15.65317006791668 
+-54.24845723443309 -15.33787520238891 -54.44238476752811 -15.02258033686113 -54.63228440615427 -14.70728547133336 -54.81815615031157 -14.39199060580558 -55. -14.07669574027781 
+-53.0006504563851 -14.05924768114316 -53.15524175763868 -13.78519616183576 -53.3067900115095 -13.51114464252836 -53.45529521799757 -13.23709312322096 -53.6007573771029 -12.96304160391356 
+-53.74317648882548 -12.68899008460616 -53.8825525531653 -12.41493856529876 -54.01888557012238 -12.14088704599136 -54.15217553969671 -11.86683552668396 -54.28242246188829 -11.59278400737656 
+-54.40962633669711 -11.31873248806916 -54.53378716412319 -11.04468096876175 -54.65490494416652 -10.77062944945435 -54.77297967682709 -10.49657793014695 -54.88801136210492 -10.22252641083955 
+-55. -9.94847489153215 -53.00196264692651 -9.93103828371088 -53.09175048252434 -9.705332868171995 -53.1794742299475 -9.479627452633112 -53.265133889196 -9.253922037094229 
+-53.34872946026984 -9.028216621555345 -53.43026094316902 -8.802511206016462 -53.50972833789353 -8.576805790477577 -53.58713164444338 -8.351100374938694 -53.66247086281857 -8.125394959399811 
+-53.7357459930191 -7.899689543860927 -53.80695703504496 -7.673984128322044 -53.87610398889616 -7.44827871278316 -53.9431868545727 -7.222573297244276 -54.00820563207458 -6.996867881705392 
+-54.07116032140178 -6.771162466166508 -54.13205092255434 -6.545457050627626 -54.19087743553222 -6.319751635088742 -54.24763986033545 -6.094046219549858 -54.30233819696401 -5.868340804010974 
+-54.35497244541791 -5.64263538847209 -54.40554260569714 -5.416929972933207 -54.45404867780172 -5.191224557394324 -54.50049066173163 -4.96551914185544 -54.54486855748688 -4.739813726316556 
+-54.58718236506746 -4.514108310777672 -54.62743208447338 -4.288402895238789 -54.66561771570464 -4.062697479699906 -54.70173925876124 -3.836992064161022 -54.73579671364318 -3.611286648622138 
+-54.76779008035044 -3.385581233083254 -54.79771935888306 -3.159875817544371 -54.825584549241 -2.934170402005487 -54.85138565142429 -2.708464986466604 -54.87512266543291 -2.48275957092772 
+-54.89679559126687 -2.257054155388836 -54.91640442892616 -2.031348739849953 -54.93394917841079 -1.805643324311069 -54.94942983972076 -1.579937908772185 -54.96284641285607 -1.354232493233302 
+-54.97419889781671 -1.128527077694418 -54.9834872946027 -0.9028216621555345 -54.99071160321402 -0.6771162466166509 -54.99587182365067 -0.4514108310777673 -54.99896795591267 -0.2257054155388836 
+-55. 0.  } ;
+					} addCurve: $Polyline2d_0;
+				} restoreProfile: $Curve2dList_0;
+				$ORASurfaceInfoObj create -> $ORASurfaceInfoObj_0
+				{
+					setSurfaceNumber: 0;
+					setSurfaceName: "SweptSurface_1";
+					setMaxHits: 1000;
+					setHighestZoneId: 0;
+					$ORAPropertyZoneObj create -> $ORAPropertyZoneObj_0
+					{
+						setName: "BareSurface";
+						setPropertiesName: "Beacon";
+					} setBareSurfaceProperties: $ORAPropertyZoneObj_0;
+				} addSurfaceInfo: $ORASurfaceInfoObj_0;
+				restoreLegacyOrientation: 0;
+			} restoreRootNode: $SweptPrimitive_0;
+		} restoreObject: $SweptSolid_0;
+	} ;
+	getSpectralRegionManager -> $ORASpectralRegionManagerObj_0
+	{
+		$ORASpectralRegionEntityObj create -> $ORASpectralRegionEntityObj_0;
+		initObject: $ORASpectralRegionEntityObj_0;
+		$ORASpectralRegionEntityObj_0
+		{
+			setColor: "FOREGROUND";
+			setWidth: "1";
+			setLayerNumber: "1";
+			setName: "source_1";
+			setOriginObj:  { 0. 0.  } ;
+			setTheta: 0.;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_0
+			{
+				setWavelength: 550.;
+				setData: 1.;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_0;
+			setRefWavlen: 0;
+			setDiscreteSpectrum: "Yes";
+			setWeightNormalization: "Photometric";
+			setDefault: 0;
+		} restoreObject: $ORASpectralRegionEntityObj_0;
+		$ORASpectralRegionEntityObj create -> $ORASpectralRegionEntityObj_1;
+		initObject: $ORASpectralRegionEntityObj_1;
+		$ORASpectralRegionEntityObj_1
+		{
+			setColor: "FOREGROUND";
+			setWidth: "1";
+			setLayerNumber: "1";
+			setName: "spectralRegion_5";
+			setOriginObj:  { 0. 0.  } ;
+			setTheta: 0.;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_1
+			{
+				setWavelength: 830.;
+				setData: 1.;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_1;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_2
+			{
+				setWavelength: 825.;
+				setData: 0.999984310227407;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_2;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_3
+			{
+				setWavelength: 820.;
+				setData: 0.999790051749414;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_3;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_4
+			{
+				setWavelength: 815.;
+				setData: 0.9994128306416202;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_4;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_5
+			{
+				setWavelength: 810.;
+				setData: 0.9988482330153392;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_5;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_6
+			{
+				setWavelength: 805.;
+				setData: 0.9980918294842845;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_6;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_7
+			{
+				setWavelength: 800.;
+				setData: 0.9971391799430983;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_7;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_8
+			{
+				setWavelength: 795.;
+				setData: 0.9959858386702548;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_8;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_9
+			{
+				setWavelength: 790.;
+				setData: 0.9946273597679941;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_9;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_10
+			{
+				setWavelength: 785.;
+				setData: 0.9930593029520271;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_10;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_11
+			{
+				setWavelength: 780.;
+				setData: 0.9912772397037886;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_11;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_12
+			{
+				setWavelength: 775.;
+				setData: 0.9892767597980373;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_12;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_13
+			{
+				setWavelength: 770.;
+				setData: 0.9870534782185142;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_13;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_14
+			{
+				setWavelength: 765.;
+				setData: 0.9846030424742975;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_14;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_15
+			{
+				setWavelength: 760.;
+				setData: 0.9819211403292921;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_15;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_16
+			{
+				setWavelength: 755.;
+				setData: 0.979003507957035;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_16;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_17
+			{
+				setWavelength: 750.;
+				setData: 0.9758459385327157;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_17;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_18
+			{
+				setWavelength: 745.;
+				setData: 0.9724442912738555;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_18;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_19
+			{
+				setWavelength: 740.;
+				setData: 0.9687945009405981;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_19;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_20
+			{
+				setWavelength: 735.;
+				setData: 0.9648925878059766;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_20;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_21
+			{
+				setWavelength: 730.;
+				setData: 0.9607346681057475;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_21;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_22
+			{
+				setWavelength: 725.;
+				setData: 0.9563169649766007;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_22;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_23
+			{
+				setWavelength: 720.;
+				setData: 0.9516358198905274;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_23;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_24
+			{
+				setWavelength: 715.;
+				setData: 0.9466877045920215;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_24;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_25
+			{
+				setWavelength: 710.;
+				setData: 0.9414692335435267;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_25;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_26
+			{
+				setWavelength: 705.;
+				setData: 0.9359771768830488;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_26;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_27
+			{
+				setWavelength: 700.;
+				setData: 0.9302084738962847;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_27;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_28
+			{
+				setWavelength: 695.;
+				setData: 0.9241602470037529;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_28;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_29
+			{
+				setWavelength: 690.;
+				setData: 0.9178298162613832;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_29;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_30
+			{
+				setWavelength: 685.;
+				setData: 0.911214714370799;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_30;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_31
+			{
+				setWavelength: 680.;
+				setData: 0.9043127021929975;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_31;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_32
+			{
+				setWavelength: 675.;
+				setData: 0.8971217847564195;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_32;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_33
+			{
+				setWavelength: 670.;
+				setData: 0.8896402277473897;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_33;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_34
+			{
+				setWavelength: 665.;
+				setData: 0.8818665744675951;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_34;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_35
+			{
+				setWavelength: 660.;
+				setData: 0.8737996632397157;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_35;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_36
+			{
+				setWavelength: 655.;
+				setData: 0.8654386452383861;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_36;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_37
+			{
+				setWavelength: 650.;
+				setData: 0.8567830027194759;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_37;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_38
+			{
+				setWavelength: 645.;
+				setData: 0.8478325676160824;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_38;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_39
+			{
+				setWavelength: 640.;
+				setData: 0.8385875404647041;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_39;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_40
+			{
+				setWavelength: 635.;
+				setData: 0.8290485096197959;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_40;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_41
+			{
+				setWavelength: 630.;
+				setData: 0.8192164707092061;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_41;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_42
+			{
+				setWavelength: 625.;
+				setData: 0.809092846276953;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_42;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_43
+			{
+				setWavelength: 620.;
+				setData: 0.7986795055533387;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_43;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_44
+			{
+				setWavelength: 615.;
+				setData: 0.787978784285532;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_44;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_45
+			{
+				setWavelength: 610.;
+				setData: 0.776993504554489;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_45;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_46
+			{
+				setWavelength: 605.;
+				setData: 0.7657269944964147;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_46;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_47
+			{
+				setWavelength: 600.;
+				setData: 0.7541831078388936;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_47;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_48
+			{
+				setWavelength: 595.;
+				setData: 0.7423662431533639;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_48;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_49
+			{
+				setWavelength: 590.;
+				setData: 0.7302813627167674;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_49;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_50
+			{
+				setWavelength: 585.;
+				setData: 0.7179340108660326;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_50;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_51
+			{
+				setWavelength: 580.;
+				setData: 0.705330331719523;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_51;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_52
+			{
+				setWavelength: 575.;
+				setData: 0.692477086129762;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_52;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_53
+			{
+				setWavelength: 570.;
+				setData: 0.6793816677217509;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_53;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_54
+			{
+				setWavelength: 565.;
+				setData: 0.6660521178608694;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_54;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_55
+			{
+				setWavelength: 560.;
+				setData: 0.6524971393840698;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_55;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_56
+			{
+				setWavelength: 555.;
+				setData: 0.6387261089175952;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_56;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_57
+			{
+				setWavelength: 550.;
+				setData: 0.6247490875941117;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_57;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_58
+			{
+				setWavelength: 545.;
+				setData: 0.6105768299719427;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_58;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_59
+			{
+				setWavelength: 540.;
+				setData: 0.596220790949107;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_59;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_60
+			{
+				setWavelength: 535.;
+				setData: 0.5816931304553878;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_60;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_61
+			{
+				setWavelength: 530.;
+				setData: 0.5670067156966551;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_61;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_62
+			{
+				setWavelength: 525.;
+				setData: 0.5521751207175095;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_62;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_63
+			{
+				setWavelength: 520.;
+				setData: 0.5372126230410376;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_63;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_64
+			{
+				setWavelength: 515.;
+				setData: 0.5221341971384159;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_64;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_65
+			{
+				setWavelength: 510.;
+				setData: 0.5069555044764678;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_65;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_66
+			{
+				setWavelength: 505.;
+				setData: 0.4916928798883105;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_66;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_67
+			{
+				setWavelength: 500.;
+				setData: 0.4763633140113052;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_67;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_68
+			{
+				setWavelength: 495.;
+				setData: 0.4609844315378688;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_68;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_69
+			{
+				setWavelength: 490.;
+				setData: 0.4455744650287396;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_69;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_70
+			{
+				setWavelength: 485.;
+				setData: 0.4301522240453341;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_70;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_71
+			{
+				setWavelength: 480.;
+				setData: 0.4147370593683276;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_71;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_72
+			{
+				setWavelength: 475.;
+				setData: 0.3993488220838797;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_72;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_73
+			{
+				setWavelength: 470.;
+				setData: 0.384007817337501;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_73;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_74
+			{
+				setWavelength: 465.;
+				setData: 0.3687347525788295;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_74;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_75
+			{
+				setWavelength: 460.;
+				setData: 0.3535506801489994;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_75;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_76
+			{
+				setWavelength: 455.;
+				setData: 0.3384769340962698;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_76;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_77
+			{
+				setWavelength: 450.;
+				setData: 0.323535061145611;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_77;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_78
+			{
+				setWavelength: 445.;
+				setData: 0.3087467457944046;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_78;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_79
+			{
+				setWavelength: 440.;
+				setData: 0.2941337295596502;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_79;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_80
+			{
+				setWavelength: 435.;
+				setData: 0.2797177244624944;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_80;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_81
+			{
+				setWavelength: 430.;
+				setData: 0.2655203209036646;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_81;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_82
+			{
+				setWavelength: 425.;
+				setData: 0.2515628901587662;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_82;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_83
+			{
+				setWavelength: 420.;
+				setData: 0.2378664818053715;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_83;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_84
+			{
+				setWavelength: 415.;
+				setData: 0.2244517164843767;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_84;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_85
+			{
+				setWavelength: 410.;
+				setData: 0.211338674495923;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_85;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_86
+			{
+				setWavelength: 405.;
+				setData: 0.1985467808349246;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_86;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_87
+			{
+				setWavelength: 400.;
+				setData: 0.1860946873821036;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_87;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_88
+			{
+				setWavelength: 395.;
+				setData: 0.1740001530826552;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_88;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_89
+			{
+				setWavelength: 390.;
+				setData: 0.1622799230648338;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_89;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_90
+			{
+				setWavelength: 385.;
+				setData: 0.1509496077734229;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_90;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_91
+			{
+				setWavelength: 380.;
+				setData: 0.1400235633162219;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_91;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_92
+			{
+				setWavelength: 375.;
+				setData: 0.1295147743430292;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_92;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_93
+			{
+				setWavelength: 370.;
+				setData: 0.1194347408933155;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_93;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_94
+			{
+				setWavelength: 365.;
+				setData: 0.1097933707577109;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_94;
+			$ORAWavelengthObj create -> $ORAWavelengthObj_95
+			{
+				setWavelength: 360.;
+				setData: 0.1005988789957967;
+				setColor: "FOREGROUND";
+			} restoreWavln: $ORAWavelengthObj_95;
+			setRefWavlen: 0;
+			setDiscreteSpectrum: "Yes";
+			setWeightNormalization: "Radiometric";
+			setDefault: 0;
+			setSpectralDefinition: "Black Body Temperature";
+			setMinWavelength: 360.;
+			setMaxWavelength: 830.;
+			setNumWavelengthsNeeded: 95;
+			setBBTemp: 3500.;
+		} restoreObject: $ORASpectralRegionEntityObj_1;
+	} ;
+	getNSRayManager -> $ORANSRayManagerObj_0
+	{
+		changeCurrentThreshold: 0.01;
+		getRegionManager -> $ORARegionDBObj_0
+		{
+			$ORAUnboundedRegionObj create -> $ORAUnboundedRegionObj_0;
+			initObject: $ORAUnboundedRegionObj_0;
+			$ORAUnboundedRegionObj_0
+			{
+				setIsRayTraceable: "Yes";
+				setMaterialName: "air_USER";
+				restoreRegion: currentObj;
+				setDoubleSidedness: "No";
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "AmbientMaterial";
+				setRegionOwner: currentObj;
+				setRootOpenRegion: currentObj;
+				addImmersedElement: $SweptSolid_0;
+			} restoreObject: $ORAUnboundedRegionObj_0;
+			$ORAOpenRegionObj create -> $ORAOpenRegionObj_0;
+			initObject: $ORAOpenRegionObj_0;
+			$ORAOpenRegionObj_0
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "BoundedRegion_4";
+				setRootOpenRegion: $ORAUnboundedRegionObj_0;
+			} restoreObject: $ORAOpenRegionObj_0;
+			$ORAOpenRegionObj create -> $ORAOpenRegionObj_1;
+			initObject: $ORAOpenRegionObj_1;
+			$ORAOpenRegionObj_1
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "BoundedRegion_5";
+				setRootOpenRegion: $ORAUnboundedRegionObj_0;
+			} restoreObject: $ORAOpenRegionObj_1;
+			$ORAOpenRegionObj create -> $ORAOpenRegionObj_2;
+			$SweptSolid_0  restoreRegion: $ORAOpenRegionObj_2 ;
+			initObject: $ORAOpenRegionObj_2;
+			$ORAOpenRegionObj_2
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "Region_35";
+				setRegionOwner: $SweptSolid_0;
+				setRootOpenRegion: $ORAUnboundedRegionObj_0;
+			} restoreObject: $ORAOpenRegionObj_2;
+			restoreObjectCounter: 40;
+			setRootRegion: $ORAUnboundedRegionObj_0;
+		} ;
+		setRootRegion: $ORAUnboundedRegionObj_0;
+	} ;
+	getIllumManager -> $ORAIllumManagerObj_0
+	{
+		changeCurrentThreshold: 0.01;
+		setIntensityChartsPolar: "Yes";
+		restoreDefaultMaxSamples: 25000;
+		setDefaultShowRayPreview: "No";
+		setDefaultRayPreviewMax: 100;
+		setDefaultGenRayPath: "No";
+		setDefaultGenRayReport: "No";
+		setDefaultPerPathRayLimit: 20;
+		setDefaultUpdateOption: "Half of Max Number";
+		setDefaultInterruptInterval: 500;
+		setDefaultSourcePowerTyp: "Photometric";
+		setDefaultSourceFluxUnits: "Lumen";
+		setDefaultResetRandomSeeds: "Yes";
+		setAnalysisResultsVisualizationType: "No_Data_Display";
+		setSavedRayDataMemoryAsInt: 4;
+		setNeedsResetRandomSeeds: "Yes";
+		getSourceDB -> $ORASourceDBObj_0
+		{
+			$ORACylinderSourceObj create -> $ORACylinderSourceObj_0;
+			$ORAOpenRegionObj_0  setRegionOwner: $ORACylinderSourceObj_0 ;
+			$ORAUnboundedRegionObj_0  addImmersedElement: $ORACylinderSourceObj_0 ;
+			initObject: $ORACylinderSourceObj_0;
+			$ORACylinderSourceObj_0
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "CylinderSource_3";
+				setPosition:  { -1.063204396589651e-018 0. -5.  } ;
+				setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+				setIsRayTraceable: "Yes";
+				setMaterialName: "air_USER";
+				restoreRegion: $ORAOpenRegionObj_0;
+				setDoubleSidedness: "No";
+				setLampPower: 1000.;
+				setCalibrationTolerance: 5.;
+				setPowerExtent: "Whole Sphere";
+				setPowerUnits: "Photometric";
+				setFluxUnits: "Lumen";
+				setStartingPointClassification: "Immersing Region";
+				setWeightFactor: 1.;
+				$ORAAimSphereDirObj create -> $ORAAimSphereDirObj_0
+				{
+					setColor: "FOREGROUND";
+					setWidth: "1";
+					setLayerNumber: "1";
+					setName: "aimSphere_0";
+					setPosition:  { 0. 0. 0.  } ;
+					setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+					setDrawAimEntity: "Yes";
+					setAimEntityOn: "Yes";
+					setMaxBoundaryPts: 32;
+					setCosUpper: 1.;
+					setCosDelta: 2.;
+				} setAimObj: $ORAAimSphereDirObj_0;
+				setSpectralRegion: $ORASpectralRegionEntityObj_1;
+				readLWLight:
+# PhotoReal Light
+ORAStartData;
+4c694c5741
+0000004c
+00000000080300000000000110030000000100000010000000040000001a414d5a766d42676b3736
+396d35774d43383177616f67773d0d0a0cd9fb1ac29d9fc2206d9952160d8c48ffffffff
+00000547
+0000002e0000000000fffffb070400000102ff00170065070600000105ff00170066070600000102
+020aff009b00010706000001050205030a0402051b0618070a081b0901ff009b000407060000ff00
+00007007040000002fff00000071070400000026ff00000072070400000025ff0000007307040000
+0018ff0017007007040000010a0202030204020502ff00000074070400000017ff00170071070400
+00010a02020302040205020602072d08020902ff00000075070400000019ff001700720704000001
+0a020a030aff0000007607040000001aff0016000107040000ff0017007307040000012702080308
+04080508060807080808ff00000012070500000b05002f0c1901020d0502020e0503020402050206
+020702080209020a02ff0000007707040000001bff00160002070400000102ff0000001307050000
+010a0200ff00000078070400000029ff00000079070400000020ff00170011070500000103022703
+06ff000e000107040000010aff000e000207040000010a020403040402051aff0006000107050300
+16030b020c0201020d0202020e0203030f0204031002050311050603070312030803130314030903
+15030a02ff00170014070500000106ff00170015070500000106ff000e0005070400000102ff000e
+000607040000ff001700170705000001270202030304270506ff001700180705000001270206ff00
+1700190705000001270206ff0017001a0705000001270206ff000e000a07040000ff000e000b0704
+0000ff000e000c070400000102ff000e000d0704000001040202ff000d0001070400000b020c0201
+040d02020403040404050406040704080409040a04ff0017001e0707030016050b020c0217270127
+0d0202270e02030a0f02040a1002050211020607120207071302082c1405090215050a02ff000000
+2207060000002f0102ff000e000e070400000104ff000e000f07040000ff00170020070500000106
+ff000e001007040000ff001700220705000001270206ff0017002607040000012703020403ff0017
+002707050300ff0017002807050300ff0017002907050300ff0017002a07050300ff001300010704
+0000012a022b032b04020502ff001300020704000001040204ff00130003070400000104ff001300
+040704000001040204ff0013000507040000010402040304ff00130006070400000104ff00130007
+070400000104ff001300080704000001040204ff000000400705000001020205030a040a05060627
+ff0000004307060300010a0205030604000527ff000200010704000001270218ff00020003070400
+00ff0002000407040000ff0002000507040000ff0002000607040000ff0002000707040000ff0002
+00080704000001020202ff00020009070400000102ff0002000a070400000102ff0002000b070400
+00ff0002000c07040000ff0002000d07040000010aff0002000e07040000ff00010001070500000b
+270c020105020a03050405050206030703080509050a05ff00a40001070500000b050c060105020a
+03050405050506270727080a090a0a05ff00a4000207050000ff0018000107040000010202020302
+0402051aff00a4000307050000ff001800020704000001020202031a041aff00a4000407050000ff
+00a4000507050000ff0018000407040000ff002f000107040000010302030309040aff0018000507
+040000010202020306041a051aff00940001080003000b0501050205030504050527060a070a0827
+09270a0aff001800060704000001020202031a041aff0094000207050000000a010aff0018000707
+0400000104020403040404ff00180008070400000102021a031affffffffff
+000005a5
+ffffffff
+00000fc2
+5129e3387ad18df97223e8bbf3f5cd46974130bfdc33fd6d7404f13cdc177112f84cc961697077e3
+1c3f864cd35cb4293be357990103fe69b09e21d61f6de5d800f6fe18def9404cd15262632454e009
+4207200461edbb1a6feb0cfd96f0284fe110a5a6843c448067e387e766502708932af57c41125b51
+70a14928e718c9e68be6e432e8becba6be464cbfc665a346c7a5a2919898bf8293b1c49848644671
+b2a1e82526e711be152639a6d7932088e3f88890e5673f8fb1c300c15e5a7235f0c7b3088437cadc
+a90dea33e6efa9611f15f8ccb4c8c0a090e0b88ee92ed26441059ac2df907b4d64e3883fdc17b84f
+6e70891e85219fbc3cd8e380c2993bc36a9f85693e31d8c77b3cb7789b63ac78a7ec3cfe935fe980
+3be06a5a40ace4b4a45b57d1bd1aa118a64a013babe925e24aa8d91e41e12030c923c48d3d7a0ca8
+6713c9f4839b1cc5d806f5dd7d6992c539aa69669aaf986937f00fda983697e4692685a1a64804c4
+c6c8c2ddef954208b0c4b6853e2b6d88600d6cb5268ca2662d334677e132749279db3954ee6c43e5
+1e845098180c84517045f9a1f6fa165a3c3adc60a04cbe5eac8d1fae668a6262bb4217ec12dd9730
+8e8a44bc0996b4b3f600a36186f62024aa9ce2b1364ab4c343e8e5c4680830905be3fd8e41c3d7d1
+9dfd9024834a06c4a75c5d850053238b5d428697762ba1e60b8fe01403b7fdb7fe55dd069063a77a
+47c78166afb99ea164f2d5514c0811f4d696864222087832861952a310562ef4c7c9d74947fabfec
+03e006817cabc9ad3b5b9b2bd35d91455596a83e2a9df329a480e87aa5e48f8206af5fd33f745665
+732a1a9792854ddabac66efbae4c88722bab11547702a08210c0e276c34c6796224c88124f695984
+4b1c9b73b2da0598ef69f76331eacef576da55fc03a903b2b4ce1cbc75086696c7daaf9011bf2531
+d5042f03952ebfd9f44a6c99c2ac9b908068d06b70509e5ecd543796c26350adedbcbcb85dcd8385
+7905f713e7cbe556c384c03ae80929e57f866a452e85f81cab3e663a8c9998c6e8f26b4e8afea651
+2611abdd86c0a1ba724d6dae2ed20cb7ab906990e89f6e3ae489446df943a1fd9554d5688ccd1d21
+90c56e96df267ba0e758e6ebe470bc911c88f792ebf2addce718ed7b8c07fc881abdcf98b54d5194
+5a47ee47e7d6bf64eae9fd0aaa8497ac67ba9d3357479cfd575af515cb0c5e255b19e25a179e438c
+6875b3132413f6cd8b028fdc87dc38491becebac6a749b7a8a4e67432de7bca831826465e4d603cd
+4cf74862add491289e2b655b0db1ec56eda28307faff59ba45ecd0a46ea482593ce22cb5702deef7
+778b5d37a50972cf57b4b6954f04e054257b9c6ebdf2af40bd07c2a349a129a8fbfcd4cd013e4494
+7d4371d723722eb0efb3397f75f0513d563603f9d7a095a36e9a72bbe780b455b7a6968e81e37a96
+712af7f6ed9a972632587c4d0571cf76f1bd98b4a63bf0bd6dadd0c6cec64cd8b08c5d0a3979d703
+f081a982c6c3bc2049e30861911a1835f40efe404956e88f234d5895b3b98616cec0646c3b0fe780
+b682a004e026012305671183d53b938bb92b24542047fc3a79625d16e839285b68859d20ef52318d
+94f06428559ad98c36e12e405758a61bdfae6d09e08ca9294a16539467b8e4944b4a69b8cac5f16d
+1099d6719d5454d0307049175727ce6c4a54d646ea98dac2250f90194783d871d2ef9f857ce56ab5
+2109489d2b4c0f4d9136ba59bae4536a4fb0cf75578cd6096459c3ba23b38bba2857ac2562297b4a
+136565c579acfbf434c883d3757589a6be91cac39cafa7eef5057b9632774dc19b557f62be6b6ae1
+6f39ee503203957c3aa57e3b87a080531dcbb36741d237f31dcbb36741d237f31dcbb36741d237f3
+1dcbb36741d237f31dcbb36741d237f31dcbb36741d237f31dcbb36741d237f31dcbb36741d237f3
+1dcbb36741d237f31dcbb36741d237f3bc2b21a2367731ab31dac627af487b3301
+				
+ORAEndData;
+ORAReadForeignData;
+				restoreKey: 1;
+				$ORACylinderObj create -> $ORACylinderObj_0;
+				initSolid: $ORACylinderObj_0;
+				$ORACylinderObj_0
+				{
+					setColor: "FOREGROUND";
+					setWidth: "1";
+					setLayerNumber: "1";
+					setName: "Cylinder_1";
+					setPosition:  { 0. 0. 0.  } ;
+					setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+					setIsRayTraceable: "Yes";
+					setMaterialName: "air_USER";
+					restoreRegion: $ORAOpenRegionObj_0;
+					setDoubleSidedness: "No";
+					getCSGTree -> $ORACSGTreeObj_1;
+					$ORACSGCylinderPrimitiveObj create -> $ORACSGCylinderPrimitiveObj_0
+					{
+						setPosition:  { 0. 0. 0.  } ;
+						setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+						setName: "CylinderPrimitive_1";
+						setRadius: 2.;
+						setLength: 10.;
+						setTaper: 1.;
+						$ORASurfaceInfoObj create -> $ORASurfaceInfoObj_1
+						{
+							setSurfaceNumber: 0;
+							setSurfaceName: "FrontSurface";
+							setMaxHits: 10;
+							setHighestZoneId: 0;
+							$ORAPropertyZoneObj create -> $ORAPropertyZoneObj_1
+							{
+								setName: "BareSurface";
+								setPropertiesName: "Source";
+							} setBareSurfaceProperties: $ORAPropertyZoneObj_1;
+						} addSurfaceInfo: $ORASurfaceInfoObj_1;
+						$ORASurfaceInfoObj create -> $ORASurfaceInfoObj_2
+						{
+							setSurfaceNumber: 1;
+							setSurfaceName: "RearSurface";
+							setMaxHits: 10;
+							setHighestZoneId: 0;
+							$ORAPropertyZoneObj create -> $ORAPropertyZoneObj_2
+							{
+								setName: "BareSurface";
+								setPropertiesName: "Source";
+							} setBareSurfaceProperties: $ORAPropertyZoneObj_2;
+						} addSurfaceInfo: $ORASurfaceInfoObj_2;
+						$ORASurfaceInfoObj create -> $ORASurfaceInfoObj_3
+						{
+							setSurfaceNumber: 2;
+							setSurfaceName: "CylinderSurface";
+							setMaxHits: 10;
+							setHighestZoneId: 0;
+							$ORAPropertyZoneObj create -> $ORAPropertyZoneObj_3
+							{
+								setName: "BareSurface";
+								setPropertiesName: "Source";
+							} setBareSurfaceProperties: $ORAPropertyZoneObj_3;
+						} addSurfaceInfo: $ORASurfaceInfoObj_3;
+					} restoreRootNode: $ORACSGCylinderPrimitiveObj_0;
+				} setSolid: $ORACylinderObj_0;
+				restoreLuminanceUnits: "Nit";
+				$ORASurfaceEmitterObj create -> $ORASurfaceEmitterObj_0
+				{
+					setColor: "FOREGROUND";
+					setWidth: "1";
+					setLayerNumber: "1";
+					setName: "FrontSurface";
+					setPosition:  { 0. 0. 0.  } ;
+					setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+					setIsEmitting: "No";
+					restoreEmittanceDirectionType: "Outward";
+					restoreBaseSurfaceFromZone: $ORAPropertyZoneObj_1;
+					setDirectionApodizerType: "Lambertian";
+					setSurfaceApodizerType: "Uniform";
+					$ORAUniformSurfaceApodizerObj create -> $ORAUniformSurfaceApodizerObj_0
+					{
+					} setSurfaceApodizer: $ORAUniformSurfaceApodizerObj_0;
+					$ORALambertianApodizerObj create -> $ORALambertianApodizerObj_0
+					{
+					} setDirectionApodizer: $ORALambertianApodizerObj_0;
+				} restoreEmitter: $ORASurfaceEmitterObj_0;
+				$ORASurfaceEmitterObj create -> $ORASurfaceEmitterObj_1
+				{
+					setColor: "FOREGROUND";
+					setWidth: "1";
+					setLayerNumber: "1";
+					setName: "RearSurface";
+					setPosition:  { 0. 0. 0.  } ;
+					setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+					setIsEmitting: "No";
+					restoreEmittanceDirectionType: "Outward";
+					restoreBaseSurfaceFromZone: $ORAPropertyZoneObj_2;
+					setDirectionApodizerType: "Lambertian";
+					setSurfaceApodizerType: "Uniform";
+					$ORAUniformSurfaceApodizerObj create -> $ORAUniformSurfaceApodizerObj_1
+					{
+					} setSurfaceApodizer: $ORAUniformSurfaceApodizerObj_1;
+					$ORALambertianApodizerObj create -> $ORALambertianApodizerObj_1
+					{
+					} setDirectionApodizer: $ORALambertianApodizerObj_1;
+				} restoreEmitter: $ORASurfaceEmitterObj_1;
+				$ORASurfaceEmitterObj create -> $ORASurfaceEmitterObj_2
+				{
+					setColor: "FOREGROUND";
+					setWidth: "1";
+					setLayerNumber: "1";
+					setName: "CylinderSurface";
+					setPosition:  { 0. 0. 0.  } ;
+					setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+					setIsEmitting: "Yes";
+					restoreEmittanceDirectionType: "Outward";
+					restoreBaseSurfaceFromZone: $ORAPropertyZoneObj_3;
+					setDirectionApodizerType: "Lambertian";
+					setSurfaceApodizerType: "Uniform";
+					$ORAUniformSurfaceApodizerObj create -> $ORAUniformSurfaceApodizerObj_2
+					{
+					} setSurfaceApodizer: $ORAUniformSurfaceApodizerObj_2;
+					$ORALambertianApodizerObj create -> $ORALambertianApodizerObj_2
+					{
+					} setDirectionApodizer: $ORALambertianApodizerObj_2;
+				} restoreEmitter: $ORASurfaceEmitterObj_2;
+				$ORACylinderObj_0 getPrimitiveAt: 0 -> $ORACSGCylinderPrimitiveObj_0;
+				setCylinderPrimitive: $ORACSGCylinderPrimitiveObj_0;
+			} restoreObject: $ORACylinderSourceObj_0;
+			setDefaultStartingPointClassification: "Automatic";
+			setDefaultShowAimRegion: "Yes";
+			setDefaultShowRayPositions: "Yes";
+			setDefaultShowBoundingBox: "Yes";
+			setDefaultRayPositionsCount: 1000;
+		} ;
+		getReceiverDB -> $ORAReceiverDBObj_0
+		{
+			$ORAFarFieldReceiverObj create -> $ORAFarFieldReceiverObj_0;
+			$ORAOpenRegionObj_1  setRegionOwner: $ORAFarFieldReceiverObj_0 ;
+			$ORAUnboundedRegionObj_0  addImmersedElement: $ORAFarFieldReceiverObj_0 ;
+			initObject: $ORAFarFieldReceiverObj_0;
+			$ORAFarFieldReceiverObj_0
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "FarfieldIntensity";
+				setPosition:  { 0. 0. 0.  } ;
+				setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+				setResponsivity: "Photometric";
+				setIlluminanceUnits: "Lux";
+				setLuminanceUnits: "Nit";
+				setWhitePointInputType: "CCT";
+				setWhitePointCCT: 6504.343575585305;
+				setGammaCorrection: 2.5;
+				restoreCenterDirectionType: "-Y";
+				restoreDataUpType: "+Z";
+				$ForwardSimFunction create -> $ForwardSimFunction_0
+				{
+					setEnabled: "Yes";
+					setRayInfoToUse: "Incident";
+					setSaveRayData: "Yes";
+					setPerPathRayLimit: 20;
+					restoreCollectRayPaths: "No";
+					setShowRayPaths: "No";
+					setListZeroPowerPath: "No";
+					setExitingAngularBounds: [3,2] { 100000000000000. -100000000000000. 100000000000000. -100000000000000. 100000000000000. -100000000000000.  } ;
+					setBoundsDefocusObj:  { 0. 0. 0.  } ;
+					setIlluminanceBounds: [3,2] { -94.98418216803756 94.98446934594793 -94.98461886556687 94.98390646786847 -94.98454641334527 94.98443909585255  } ;
+					setIntensityBounds: [3,2] { -179.9996342377241 180.000001 -89.95391093139936 89.97040062180815 -1.000000997532873 1.00000053973674  } ;
+					setUserLinearBoundsObj: [3,2] { -94.98463507896625 94.98463507896625 -94.98463507896625 94.98463507896625 -94.98463507896625 94.98463507896625  } ;
+					setUserAngularBoundsObj: [3,2] { -180. 180. -90. 90. 0. 1.  } ;
+					setIlluminanceDefocusBounds: [3,2] { -94.98418216803756 94.98446934594793 -94.98461886556687 94.98390646786847 -94.98454641334527 94.98443909585255  } ;
+					setNumSamplesInBounds: 621204;
+					setClipToLinearBounds: "No";
+					setIntegrationInterval: 1e-006;
+					$ORAIntensityDataMeshObj create -> $ORAIntensityDataMeshObj_0
+					{
+						setColor: "FOREGROUND";
+						setWidth: "1";
+						setLayerNumber: "1";
+						setName: "intensityMesh_5";
+						setPosition:  { 0. 0. 0.  } ;
+						setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+						setChartSourceStr: "FarfieldIntensity Forward_Simulation";
+						setChartXAxisStr: "metric.polar";
+						setChartYAxisStr: "metric.polar";
+						setAutoBounds: "No";
+						setDoDrawMesh: "No";
+						setDoInsetMesh: "No";
+						setDataBounds: [3,2] { -180. 180. -25. 25. 0.6396950751239192 130.8819994999012  } ;
+						setMesh: [41,5] { 3.498412402533001 3.437087404941266 3.591054820088193 4.565705675733162 4.064228194265306 4.573243369257211 4.703414045271636 4.146874546178601 4.25827138024384 4.618473724406886 
+4.235063446529426 4.275095832500114 4.000270468544573 4.149733371578098 4.426453869776887 3.831417503582042 5.107338793581567 4.817334985150927 3.929236685424077 4.460075108223014 
+3.786027488148865 3.991823961835774 4.397952865092991 4.631766765432634 3.638636257868376 4.282898176292441 4.941692192907547 4.165271897418069 4.128750463909814 4.30974443826414 
+3.553655990916424 3.558908855585055 5.0622012832009 4.123504928298933 3.668344648474982 3.730460359040484 3.881179545470612 3.989599448400032 4.179726019637625 3.936534152788214 
+3.376971131125628 3.223201263208003 2.986020942239338 2.770999322473049 2.626827425250688 1.950776953764586 1.521820573643041 1.180975760224035 1.854868528673953 2.154402217703912 
+0.8925059611529125 1.220067161093399 0.6396950751239192 0.8433730473637966 1.255276769228659 1.280311784353079 1.452262636864298 1.257892927613453 1.178549422812041 0.9943884380311203 
+1.945353779610082 1.973609216373237 2.541039542834921 1.926656060828102 1.615937255224758 1.921313297509044 2.171258129798956 1.755844222183732 1.773832795223616 1.991070051555981 
+1.693600920020314 1.799993762744016 1.56473129327512 1.138235233909692 1.638738297480313 18.01160148682977 19.80209727595706 18.32764004726802 19.64313218949382 19.47997017253115 
+107.2633378689007 105.3370053849001 105.0071140916321 103.8469775736325 106.07019848658 122.2798841211369 122.7814384395685 124.5219328832636 122.5216821747677 120.8656070312808 
+127.3216845424416 127.6631806792889 127.160593588584 127.4756812316875 125.3223521394871 127.4572665063406 126.8442732822356 128.3595023945952 129.1586801791996 128.7957639399943 
+130.8819994999012 127.4917295589228 130.3933289244766 128.2311092314132 128.6372544648665 128.3703226580403 129.2272565809782 128.6605310231883 128.9066593163257 129.8323620190087 
+126.5028586347697 126.4726108941387 124.9225937080177 128.1756916042815 128.3281861387692 121.0252790631425 124.0293733459584 122.6584666902463 124.4692399673331 123.3105709813705 
+105.6873946451963 106.0562541066472 107.0137729072387 105.616397357044 105.8924997546332 19.20643530154651 19.32391248390738 18.23307049994527 19.15607221207793 18.37380455002841 
+1.771868664148594 1.279584810216816 1.764942940932601 1.747139638396175 1.58445396917658 2.373472755156998 1.420461182253674 2.225281171117564 2.131607572735892 1.671610486676885 
+1.164208903006051 1.576841553540433 1.851283455279631 1.709386738533509 1.744357768753653 0.7542467339613092 1.494891867738733 1.473398776830319 1.321923847208638 1.226273737795955 
+0.8728334454394308 1.194664294031026 1.275967994091272 1.216223598004008 0.9617963350111589 2.150300595987523 1.438049012235341 1.844139728366999 2.160353768062291 1.909944725872395 
+3.158922991466269 2.711136078096479 2.497539182233219 3.219646759557148 3.278947972066136 3.674548707442863 3.927470616603977 4.046042364510161 4.315749749880755 4.89807954407955 
+3.650676692859414 4.604554863935608 4.955517355927041 5.264526034366371 4.885725740920849 4.928760523068863 3.777352821840116 4.706138452286331 3.730004307173632 4.244095102676933 
+3.744228497750324 3.779495383045389 4.572551210887772 4.657031874544151 4.518718117018681 4.187196524809226 5.39106387022873 3.998598931644823 4.15410849283691 3.771438231497672 
+4.175416399515156 3.88564903306002 3.99797334251629 4.476430461991686 4.495750175944248 3.79395758913267 4.637399863275005 3.589782335144391 4.588542544245968 4.073482338351877 
+4.68104888023483 3.874271478259119 5.122046523985 4.66580265243039 3.241755829848125  } ;
+						restoreNumSamples: 213699;
+						$ORA3DDataSliceObj create -> $ORA3DDataSliceObj_0
+						{
+							setColor: "FOREGROUND";
+							setWidth: "1";
+							setLayerNumber: "1";
+							setName: "slice3d_5";
+							setPosition:  { 0. 0. 0.  } ;
+							setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+							setChartSourceStr: "farFieldReceiver_4 intensityMesh";
+							setChartXAxisStr: "angle.polar";
+							setChartYAxisStr: "luminous intensity.polar";
+							setSliceDirection: "Column";
+							setSliceOffset: -180.;
+						} restore3DDataSlice: $ORA3DDataSliceObj_0;
+						$ORA3DDataSliceObj create -> $ORA3DDataSliceObj_1
+						{
+							setColor: "FOREGROUND";
+							setWidth: "1";
+							setLayerNumber: "1";
+							setName: "slice3d_6";
+							setPosition:  { 0. 0. 0.  } ;
+							setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+							setChartSourceStr: "farFieldReceiver_4 intensityMesh";
+							setChartXAxisStr: "angle.polar";
+							setChartYAxisStr: "luminous intensity.polar";
+							setSliceDirection: "Column";
+							setSliceOffset: -90.;
+						} restore3DDataSlice: $ORA3DDataSliceObj_1;
+						setSymmetry: "No Symmetry";
+						setMinValue: 0.6396950751239192;
+						setMaxValue: 130.8819994999012;
+						setMean: 30.75450033100915;
+						setReceiverAutoBounds: "No";
+						setDoNoiseReduction: "No";
+						setDoEdgePreserving: "Yes";
+						setDoSkipZeroBins: "Yes";
+						setBilateralKernelSizeN: 3;
+						setNSigmaDRatio: 3.;
+						setBilateralSigmaR: 0.15;
+						setTotalFluxError: 0.;
+						setFluxUnits: "Lumen";
+						setTotalPower: 163.3303146995594;
+						setTotalIrradiance: 6139.02618891607;
+						setCentroidX: 43.69664836888995;
+						setCentroidY: 12.38441881737047;
+						setStandardDeviationX: 0.;
+						setStandardDeviationY: 0.;
+						setErrorAtPeak: 0.01888498490713329;
+						restoreMeanMeshError: 0.1104012109625781;
+						setAbsorbedPower: 0.;
+						setCountsMesh: [41,5] { 78. 84. 91. 105. 94. 100. 111. 99. 97. 96. 
+93. 102. 89. 96. 94. 86. 112. 109. 87. 98. 
+94. 88. 101. 114. 87. 108. 102. 95. 94. 108. 
+85. 77. 102. 89. 90. 89. 95. 92. 96. 82. 
+73. 70. 71. 67. 68. 52. 43. 33. 47. 56. 
+31. 40. 24. 32. 37. 36. 43. 39. 41. 34. 
+68. 67. 79. 72. 60. 75. 93. 82. 75. 79. 
+65. 72. 69. 47. 62. 635. 646. 638. 675. 656. 
+3713. 3680. 3664. 3665. 3675. 4405. 4396. 4473. 4385. 4358. 
+4606. 4573. 4563. 4581. 4484. 4547. 4556. 4606. 4607. 4610. 
+4641. 4625. 4674. 4539. 4608. 4563. 4583. 4612. 4559. 4598. 
+4532. 4520. 4529. 4580. 4615. 4421. 4431. 4411. 4468. 4407. 
+3670. 3675. 3712. 3684. 3669. 662. 650. 654. 650. 628. 
+72. 68. 73. 78. 68. 96. 73. 88. 78. 67. 
+62. 57. 69. 75. 63. 34. 50. 47. 43. 40. 
+32. 42. 38. 41. 36. 50. 37. 43. 63. 51. 
+75. 68. 60. 82. 77. 89. 88. 82. 98. 114. 
+84. 113. 110. 113. 103. 105. 90. 101. 84. 98. 
+75. 85. 105. 98. 93. 87. 119. 86. 89. 89. 
+101. 94. 92. 102. 98. 84. 96. 89. 104. 92. 
+99. 84. 109. 103. 80.  } ;
+						setSumsMesh: [41,5] { 85219.16363637683 83725.32460213758 87475.87566254882 111217.7680407616 99002.08657272626 112451.1696172879 115651.9275008712 101967.2156764497 104706.3448394651 113563.3357383777 
+105060.6705419946 106053.7676623985 99236.08065872963 102943.8581246666 109808.5583730901 95841.05295778163 127757.6059856047 120503.3011922027 98287.95240907988 111566.6184234031 
+95447.10292202489 100635.3054024533 110873.9598628714 116768.4916591076 91731.31745284329 108763.2436290504 125493.1706973835 105776.1505206481 104848.6968650071 109444.9984621492 
+90858.78560435759 90993.08923587282 129428.8085994061 105428.5083239606 93791.10999788375 95981.11428068164 99858.97225657027 102648.5108367485 107540.2824695781 101283.1924276913 
+87391.63906810081 83412.27404695911 77274.35453290011 71709.87350632098 67978.89153561632 50752.69979109135 39592.68770371805 30725.04424636516 48257.48295112007 56050.34895116107 
+23332.63012318229 31896.00633978963 16723.43853054724 22048.15679279158 32816.48508072823 33617.3438191038 38132.28385129174 33028.68844292287 30945.35381043763 26109.81045365037 
+51278.71839387262 52023.51998218019 66980.74792896732 50785.85428551432 42595.43550451095 50818.88034243728 57429.93984055214 46442.2109308255 46918.01003242454 52663.95170148325 
+44928.83127953752 47751.2825569177 41510.1027888714 30195.76700521637 43473.40368587332 479019.837025812 526638.2013189761 487424.9052717257 522410.51341093 518071.2078343877 
+2858515.792336778 2807179.968408409 2798388.525868056 2767471.451834599 2826719.208018369 3263880.348620611 3277267.777758773 3323724.851647005 3270334.393954823 3226130.63014269 
+3402310.468916029 3411435.983439854 3398005.770617958 3406425.593137663 3348883.987874243 3408249.658736807 3391858.01623473 3432375.746189742 3453746.025706229 3444041.524877633 
+3500621.070348915 3409943.586547421 3487550.896304146 3429719.324008624 3440582.24302943 3432665.083629692 3455579.781476818 3440425.351746136 3447006.904089794 3471760.501958256 
+3380429.671721872 3379621.386746852 3338201.578971835 3425131.38255276 3429206.365954092 3230392.577320373 3310577.510153422 3273985.43022522 3322318.378505054 3291391.321605874 
+2816517.671801959 2826347.597074273 2851865.007471249 2814625.62859849 2821983.623226396 510796.5282665684 513920.8423809967 484909.8213587669 509457.1182797888 488652.6535430179 
+47005.16356597032 33945.57086412157 46821.43394810001 46349.13757271303 42033.31741841231 62778.53179735808 37571.30445389354 58858.85332179658 56381.17964224862 44214.2223299717 
+30688.06358751452 41564.8890311162 48799.06367958746 45058.72510708479 45980.5469522413 19804.37272380908 39251.60613556951 38687.25873548016 34709.95816596334 32198.45850333559 
+22818.33492212591 31231.9035471662 33357.41222018541 31795.52472977996 25144.07647166723 55943.63845551635 37413.23151373629 47978.35540655551 56205.18841040703 49690.38162087992 
+81748.83562659496 70160.69027588607 64633.07925863501 83320.28809621804 84854.92666985569 94542.561902392 101049.9964629686 104100.7321338794 111040.0406604703 126022.8194991701 
+93339.38113176798 117727.8454231972 126701.1466927996 134601.7857349498 124916.7361023997 125164.7738270164 95925.03214501476 119511.3360087294 94722.62717899187 107777.8482319427 
+94393.33547023153 95282.42622327915 115275.6464151362 117405.4340683351 113918.4949239708 104740.6928385369 134854.851344788 100023.015400022 103913.0117462093 94340.70051985678 
+103580.9858018983 96392.62742065324 99179.09506597572 111048.3448262997 111527.6155924081 93289.36466498366 114028.7092775088 88268.91325576465 112827.3599887058 100162.5796786391 
+114027.4572048106 94374.85838961117 124769.8872107161 113656.0685197136 78967.16817405004  } ;
+						setVarianceMesh: [41,5] { 124419387.2365668 112625092.2425399 115867185.3069959 153997200.4782914 141593550.5280411 158700995.6222568 158826793.7643659 144375583.1177963 147557367.6618457 168855029.9467183 
+147581882.5591473 149639640.3920405 146359288.4247645 148356150.6940522 159212863.673692 137589642.5833065 185316629.7734509 170951554.6303186 146419590.3150033 165029337.00925 
+136277121.6656403 145618449.8790473 157683196.4056397 164920533.2794834 128033951.4731696 154421980.3254047 183788749.0271941 155158386.5005754 149739114.3291466 156484566.2808309 
+129218809.259883 133437523.016759 199212113.2145494 161362296.8903033 133327853.1568142 141813625.840233 148276682.2582735 154507775.5404579 159812460.3870409 154643545.2520058 
+131124034.2802304 125173674.4388332 111530316.7706414 105247994.4868948 95860143.91660681 71340193.43854378 50066088.13208854 41634057.52074352 68843804.0904544 76318405.95502317 
+29008837.61637649 39477604.73974945 18911429.79886628 24934643.26906182 43155239.51765104 44127746.19805579 49446987.81095475 41271578.37173168 38964175.83316299 33616900.58195337 
+60942398.16639478 60010462.9270492 84858664.40781733 57135198.49476245 48818735.66176501 59645928.67735283 62326123.22466949 47141463.25402055 49798669.51147661 62451638.77520613 
+49196474.19471123 54737707.39011453 41323354.1301652 32647253.33960667 48385017.80459601 589608549.2525364 655232294.0136907 606861660.2282322 631966337.8616356 643285782.5230838 
+3577536411.394797 3497085088.048814 3493878295.161962 3450077261.222565 3530494675.256967 4034063724.564338 4085001149.668934 4120784008.018385 4064707116.514097 3991283368.797655 
+4182612963.868249 4227098798.487875 4222218015.551363 4211895939.008817 4154939098.840996 4216985749.157681 4196772193.817986 4262070748.167571 4302919367.581697 4256070945.932035 
+4370423161.861682 4216087561.447294 4314413844.064812 4279681384.703241 4272643532.557492 4271161419.766204 4299089624.279482 4274974977.444982 4296219236.683563 4345110252.561688 
+4202783526.348163 4167988710.542069 4123637933.499291 4225864876.07109 4250497683.787395 3994398059.058051 4120378558.095483 4052161095.404651 4106836908.212397 4101788251.239349 
+3519061502.938753 3533461090.261732 3567476221.532552 3520153512.930355 3529992033.704176 625856713.6515243 641978714.6781657 588180308.8451741 624242135.024964 602983461.2492979 
+51150317.58551926 33538421.24361683 52667093.31862815 49624594.38230991 45623262.91204969 68480996.59070002 34852297.04912804 71168279.78415127 64903776.58336172 45274223.4035814 
+29660209.43038819 45362054.98276813 56317628.82622284 45424774.35904334 54943407.03690968 20645905.35869699 46915777.21737917 51291226.83260877 44996079.07722567 40363770.33781811 
+27520472.44290543 37689400.04225252 46517803.23413894 40236962.0230815 30033426.51094694 81366056.2905632 53798204.2934745 70022434.43155098 76060037.81376492 69790623.92013505 
+120363643.8280886 97288532.93401028 92255308.21961036 112523687.1147787 126607393.5767034 138741368.3179623 148539425.9576251 157745587.7358964 164267092.9598757 185804820.2054453 
+133311882.9494453 168955907.6548629 190076783.1814503 198651368.2567752 187735909.8989867 182454571.4459478 141711991.4303969 176876896.3715779 137953447.4657407 149586726.9669887 
+147949595.8673017 140240954.6822015 168817308.5851835 179184229.1465217 173157793.893404 158076628.3432828 193201733.3374346 147800500.6058857 152133554.844416 127506269.8348044 
+145433994.9771274 130341766.6227777 138042001.4077714 159091501.7391052 160278549.4452075 132667622.2777944 166546331.5694142 116801037.5552793 161462242.4254859 139551387.7397424 
+164879612.714762 135955384.8029003 183008567.6400242 160989588.6811851 104856455.7915876  } ;
+						setErrorMesh: [41,5] { 0.130890088531839 0.1267537275581374 0.1230529217286014 0.111578941639847 0.1201925054064644 0.1120278106641206 0.1089705164436898 0.1178382583653196 0.1160132118046648 0.1144244570483854 
+0.1156315519662418 0.1153445890489033 0.1219103396523738 0.1183184134565332 0.114908693552295 0.1223886923960322 0.1065541653636144 0.1085019598222191 0.123111693660648 0.1151453243898971 
+0.1223062710051 0.1199106709135674 0.1132565032573974 0.1099794883514217 0.1233516444656333 0.1142542615697633 0.1080287543971134 0.117760561974119 0.1167090658431245 0.1142983170385302 
+0.1251111279480493 0.1269493776441613 0.1090503133238487 0.1204877714511592 0.1231115409873125 0.1240718314576097 0.1219408836926788 0.1210939697761164 0.117553116122683 0.1227802510254576 
+0.1310301585492313 0.1341301897878096 0.136666188257888 0.1430632076103663 0.1440273465459727 0.1664209480747022 0.1787132881272397 0.2100060720486547 0.171936374211583 0.1558605931497452 
+0.2308348980922959 0.1969876903773477 0.2600378725336435 0.2264797051626509 0.2001818520836181 0.1976025193833613 0.1844068728143888 0.1945065410260626 0.2017145820603155 0.2220624442750754 
+0.1522378380338637 0.1489065339035937 0.1375302091198654 0.1488363832329974 0.1640326121396744 0.1519726057854183 0.1374664431199504 0.1478388728539972 0.1504074284432104 0.1500577657159903 
+0.1561140058979115 0.1549381125088589 0.1548616826318698 0.1892244532411407 0.16000435690989 0.05069071153844424 0.04860548580946732 0.05054022074791794 0.04812104661316244 0.0489567432776543 
+0.0209243239630424 0.02106603704168707 0.02112252705182257 0.02122419664742574 0.02102011609835136 0.01945974512118305 0.01950222504023789 0.0193136724352505 0.01949496532623168 0.01958277944787001 
+0.0190085897684948 0.01905829184978772 0.01912256805376726 0.01905197089307864 0.01924785012243601 0.01905327636074539 0.0190994136022678 0.01902021854549936 0.01899289668290341 0.0189424456686904 
+0.01888498490713329 0.01904178322591163 0.01883390372761509 0.01907423541730054 0.01899837198911185 0.01903888716545412 0.01897436826006638 0.01900442128976437 0.01901520730222273 0.01898675045456257 
+0.01917770375210221 0.01910272031820223 0.01923657299458378 0.01897931649675016 0.01901193280403583 0.01956457270815259 0.01938941913833062 0.01944314920394662 0.0192891228712174 0.0194583987409179 
+0.02106206496804556 0.02103170997916 0.02094361178555894 0.021079493133927 0.02105389116372768 0.04897670015550581 0.04930194845853748 0.05001430752372334 0.04904208265300034 0.0502518944290338 
+0.1521523270759425 0.1706035999034055 0.1549975969446889 0.1519871346263142 0.1606939416552328 0.1318177460371445 0.1571301154776077 0.1433281308646293 0.1428896675502065 0.1521820794184687 
+0.1774670054912099 0.1620390673909778 0.1537838365782015 0.149577920001978 0.1612069124796405 0.2294329952192173 0.1745026495146446 0.1851201039768861 0.1932561153122411 0.197315309400949 
+0.2299026579478337 0.1965672479452539 0.2044641855013014 0.1995016973105774 0.2179549581281254 0.1612393077244831 0.1960463082531438 0.1744107483624552 0.1551678921240574 0.1681226428173355 
+0.1342041939129058 0.1405843489665332 0.1486075365311661 0.1273125492326311 0.1326027319185275 0.1245878295677536 0.120610347281901 0.1206493055230313 0.1154238811898058 0.1081631424731423 
+0.1236999471987544 0.1104097674022579 0.1088138035791433 0.1047116393097573 0.1096864669124699 0.1079183398190546 0.1240998758790322 0.1112823922602235 0.1239973900608439 0.1134793974503542 
+0.128859238064845 0.1242866901269067 0.1127121982065719 0.1140149215607512 0.1155119149296763 0.1200379001856127 0.1030715802675766 0.1215452550835049 0.1186977739705714 0.119692427106772 
+0.1164267909005444 0.1184398867098917 0.118463751653349 0.1135824940998408 0.1135155308305851 0.1234668412605142 0.1131757359116258 0.1224378149928941 0.1126214367656277 0.1179401235981252 
+0.112609243156277 0.1235497564812653 0.1084241256145645 0.1116365138759039 0.1296734372913884  } ;
+						setCellAreaMesh: [41,5] { 0.0243593818655212 0.0243593818655212 0.0243593818655212 0.0243593818655212 0.0243593818655212 0.0245889318668716 0.0245889318668716 0.0245889318668716 0.0245889318668716 0.0245889318668716 
+0.02480734276320944 0.02480734276320944 0.02480734276320944 0.02480734276320944 0.02480734276320944 0.02501451561156637 0.02501451561156637 0.02501451561156637 0.02501451561156637 0.02501451561156637 
+0.02521035655995531 0.02521035655995531 0.02521035655995531 0.02521035655995531 0.02521035655995531 0.02539477688988698 0.02539477688988698 0.02539477688988698 0.02539477688988698 0.02539477688988698 
+0.02556769305656025 0.02556769305656025 0.02556769305656025 0.02556769305656025 0.02556769305656025 0.02572902672670915 0.02572902672670915 0.02572902672670915 0.02572902672670915 0.02572902672670915 
+0.02587870481408913 0.02587870481408913 0.02587870481408913 0.02587870481408913 0.02587870481408913 0.02601665951258517 0.02601665951258517 0.02601665951258517 0.02601665951258517 0.02601665951258517 
+0.02614282832693005 0.02614282832693005 0.02614282832693005 0.02614282832693005 0.02614282832693005 0.02625715410101464 0.02625715410101464 0.02625715410101464 0.02625715410101464 0.02625715410101464 
+0.02635958504378093 0.02635958504378093 0.02635958504378093 0.02635958504378093 0.02635958504378093 0.02645007475268258 0.02645007475268258 0.02645007475268258 0.02645007475268258 0.02645007475268258 
+0.02652858223470889 0.02652858223470889 0.02652858223470889 0.02652858223470889 0.02652858223470889 0.0265950719249521 0.0265950719249521 0.0265950719249521 0.0265950719249521 0.0265950719249521 
+0.02664951370272023 0.02664951370272023 0.02664951370272023 0.02664951370272023 0.02664951370272023 0.026691882905182 0.026691882905182 0.026691882905182 0.026691882905182 0.026691882905182 
+0.02672216033853917 0.02672216033853917 0.02672216033853917 0.02672216033853917 0.02672216033853917 0.02674033228672182 0.02674033228672182 0.02674033228672182 0.02674033228672182 0.02674033228672182 
+0.02674639051760176 0.02674639051760176 0.02674639051760176 0.02674639051760176 0.02674639051760176 0.02674033228672182 0.02674033228672182 0.02674033228672182 0.02674033228672182 0.02674033228672182 
+0.02672216033853917 0.02672216033853917 0.02672216033853917 0.02672216033853917 0.02672216033853917 0.026691882905182 0.026691882905182 0.026691882905182 0.026691882905182 0.026691882905182 
+0.02664951370272023 0.02664951370272023 0.02664951370272023 0.02664951370272023 0.02664951370272023 0.0265950719249521 0.0265950719249521 0.0265950719249521 0.0265950719249521 0.0265950719249521 
+0.0265285822347092 0.0265285822347092 0.0265285822347092 0.0265285822347092 0.0265285822347092 0.02645007475268258 0.02645007475268258 0.02645007475268258 0.02645007475268258 0.02645007475268258 
+0.02635958504378061 0.02635958504378061 0.02635958504378061 0.02635958504378061 0.02635958504378061 0.02625715410101464 0.02625715410101464 0.02625715410101464 0.02625715410101464 0.02625715410101464 
+0.02614282832693005 0.02614282832693005 0.02614282832693005 0.02614282832693005 0.02614282832693005 0.02601665951258517 0.02601665951258517 0.02601665951258517 0.02601665951258517 0.02601665951258517 
+0.02587870481408913 0.02587870481408913 0.02587870481408913 0.02587870481408913 0.02587870481408913 0.02572902672670915 0.02572902672670915 0.02572902672670915 0.02572902672670915 0.02572902672670915 
+0.02556769305656025 0.02556769305656025 0.02556769305656025 0.02556769305656025 0.02556769305656025 0.02539477688988698 0.02539477688988698 0.02539477688988698 0.02539477688988698 0.02539477688988698 
+0.02521035655995531 0.02521035655995531 0.02521035655995531 0.02521035655995531 0.02521035655995531 0.02501451561156637 0.02501451561156637 0.02501451561156637 0.02501451561156637 0.02501451561156637 
+0.02480734276320944 0.02480734276320944 0.02480734276320944 0.02480734276320944 0.02480734276320944 0.0245889318668716 0.0245889318668716 0.0245889318668716 0.0245889318668716 0.0245889318668716 
+0.0243593818655212 0.0243593818655212 0.0243593818655212 0.0243593818655212 0.0243593818655212  } ;
+						setWeight: [41,5] { 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 
+1. 1. 1. 1. 1.  } ;
+						setClippedPower: 0.;
+						setContrastRatio: 0.9902724021737873;
+						setStandardDeviation: 49.09325778300465;
+						setAverageDeviation: 1.639367146484337;
+						setSecondMoment: 2410.147959748546;
+						setSkewness: 1.362182381877388;
+						setKurtosis: -0.08435955937139772;
+						restoreApertureMode: "None";
+						setStatisticsBoundaryCellStatus: "Keep Boundary Cell";
+						setStatisticsApertureShape: "MeshExtents";
+						setStatisticsApertureHalfWidth: 180.;
+						setStatisticsApertureCenterX: 180.;
+						setStatisticsApertureCenterY: 90.;
+						setStatisticsApertureHalfHeight: 90.;
+						restoreBeamCenterType: "Mesh Peak";
+						restoreBeamCustomCenterX: 0.;
+						restoreBeamCustomCenterY: 0.;
+						restoreBeamThreshold2: 10.;
+						restoreBeamPeakX: -144.;
+						restoreBeamPeakY: 0.;
+						setShowGraphic: "Yes";
+					} restoreDataSet: $ORAIntensityDataMeshObj_0;
+					$ORAIntensityScatterMeshObj create -> $ORAIntensityScatterMeshObj_0
+					{
+						setColor: "FOREGROUND";
+						setWidth: "1";
+						setLayerNumber: "1";
+						setName: "intensityScatter_6";
+						setPosition:  { 0. 0. 0.  } ;
+						setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+						setChartSourceStr: "FarfieldIntensity Forward_Simulation";
+						setChartXAxisStr: "metric.polar";
+						setChartYAxisStr: "metric.polar";
+					} restoreDataSet: $ORAIntensityScatterMeshObj_0;
+				} restoreFunction: $ForwardSimFunction_0;
+				setPhotometryType: "Photometry Type A";
+				setTotalPowerEmitted: 1000.;
+				setNumberOfEmittingSources: 1;
+				setIsRayTraceable: "Yes";
+				setMaterialName: "SILICA_SPECIAL";
+				restoreRegion: $ORAOpenRegionObj_1;
+				setDoubleSidedness: "No";
+				setReceiverType: "Infinite";
+				setRadius: 94.98463507896625;
+			} restoreObject: $ORAFarFieldReceiverObj_0;
+			restoreDefaultMeshDim: 21;
+			setDefaultMeshDoNoiseReduction: "Yes";
+			setDefaultMeshDoEdgePreserving: "Yes";
+			setDefaultMeshKernelSizeN: 3;
+			setDefaultMeshBilateralSigmaR: 0.15;
+			setDefaultColorMeshDoNoiseReduction: "No";
+			setDefaultColorMeshDoEdgePreserving: "Yes";
+			setDefaultColorMeshKernelSizeN: 3;
+			setDefaultColorMeshBilateralSigmaR: 0.1;
+		} ;
+		$ORAForwardIllumSimObj create -> $ORAForwardIllumSimObj_0;
+		initDB: $ORAForwardIllumSimObj_0;
+		$ORAForwardIllumSimObj_0
+		{
+			$ORAForwardStartObj create -> $ORAForwardStartObj_0;
+			initObject: $ORAForwardStartObj_0;
+			$ORAForwardStartObj_0
+			{
+				setColor: "FOREGROUND";
+				setWidth: "1";
+				setLayerNumber: "1";
+				setName: "forwardStarter_7";
+				setPosition:  { 0. 0. 0.  } ;
+				setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+				setSource: $ORACylinderSourceObj_0;
+				setNumRaysTraced: 1000000;
+			} restoreObject: $ORAForwardStartObj_0;
+			setPerPathRayLimit: 20;
+			restoreCollectRayPaths: "No";
+			setShowRayPaths: "Yes";
+			setListZeroPowerPath: "No";
+			setName: "forwardSim_1";
+			setMaxProgress: 1000000;
+			setUpdateOption: "Specific Number";
+			setInterruptInterval: 10000;
+			setDefaultGenRayReport: "No";
+			setShowRayPreview: "Yes";
+			setRayPreviewMax: 100;
+			setDispersiveMode: "Yes";
+			setSpectralSampleSetting: "Photometrically Weighted";
+			setRNType: "Sobol";
+			setStartingSeed: 1;
+		} restoreDB: $ORAForwardIllumSimObj_0;
+		setCurSimulation: $ORAForwardIllumSimObj_0;
+		$ReceiverDefaults create -> $ReceiverDefaults_0
+		{
+			setResponsivity: "Radiometric";
+			setIlluminanceUnits: "Lux";
+			setLuminanceUnits: "Nit";
+			setCIEUnits: "x,y";
+			setWhitePointInputType: "CCT";
+			setWhitePointCCT: 5500.;
+			setDefaultPhotometryType: "Photometry Type C";
+			setIntensityMeshDefaultMinLongitude: 0.;
+			setIntensityMeshDefaultMaxLongitude: 360.;
+			setIntensityMeshDefaultMinLatitude: 0.;
+			setIntensityMeshDefaultMaxLatitude: 180.;
+			setIntensityMeshDefaultSymmetry: "No Symmetry";
+			setIntensityMeshDefaultShowGraphic: "Yes";
+			setDefaultIntensityRotationType: "Data Vectors";
+			setDefaultCenterDirectionType: "+Z";
+			setDefaultDataUpType: "-Y";
+			setDefaultIntensityRotationAlpha: 0.;
+			setDefaultIntensityRotationBeta: 0.;
+			setDefaultIntensityRotationGamma: 0.;
+			setDefaultSymmetry: "No Symmetry";
+			setDefaultMaxLatitude: 180.;
+			setDefaultFullSlices: "Yes";
+			setDefaultNumberSlices: 36;
+			setDefaultShowSliceGraphic: "Yes";
+			setDefaultBinAngularResolution: 5.;
+		} restoreFFRReceiverDefaults: $ReceiverDefaults_0;
+		$ReceiverDefaults create -> $ReceiverDefaults_1
+		{
+			setResponsivity: "Radiometric";
+			setIlluminanceUnits: "Lux";
+			setLuminanceUnits: "Nit";
+			setCIEUnits: "x,y";
+			setWhitePointInputType: "CCT";
+			setWhitePointCCT: 5500.;
+			setDefaultPhotometryType: "Photometry Type B";
+			setIntensityMeshDefaultMinLongitude: -90.;
+			setIntensityMeshDefaultMaxLongitude: 90.;
+			setIntensityMeshDefaultMinLatitude: -180.;
+			setIntensityMeshDefaultMaxLatitude: 180.;
+			setIntensityMeshDefaultSymmetry: "No Symmetry";
+			setIntensityMeshDefaultShowGraphic: "No";
+			setDefaultIntensityRotationType: "Data Vectors";
+			setDefaultCenterDirectionType: "+Z";
+			setDefaultDataUpType: "+Y";
+			setDefaultIntensityRotationAlpha: 0.;
+			setDefaultIntensityRotationBeta: 0.;
+			setDefaultIntensityRotationGamma: 0.;
+			setDefaultSymmetry: "No Symmetry";
+			setDefaultMaxLatitude: 180.;
+			setDefaultFullSlices: "No";
+			setDefaultNumberSlices: 2;
+			setDefaultShowSliceGraphic: "No";
+			setDefaultBinAngularResolution: 5.;
+		} restoreSurfaceReceiverDefaults: $ReceiverDefaults_1;
+		$ReceiverDefaults create -> $ReceiverDefaults_2
+		{
+			setResponsivity: "Radiometric";
+			setIlluminanceUnits: "Lux";
+			setLuminanceUnits: "Nit";
+			setCIEUnits: "x,y";
+			setWhitePointInputType: "CCT";
+			setWhitePointCCT: 5500.;
+			setDefaultPhotometryType: "Photometry Type C";
+			setIntensityMeshDefaultMinLongitude: 0.;
+			setIntensityMeshDefaultMaxLongitude: 360.;
+			setIntensityMeshDefaultMinLatitude: 0.;
+			setIntensityMeshDefaultMaxLatitude: 180.;
+			setIntensityMeshDefaultSymmetry: "No Symmetry";
+			setIntensityMeshDefaultShowGraphic: "Yes";
+			setDefaultIntensityRotationType: "Data Vectors";
+			setDefaultCenterDirectionType: "+Z";
+			setDefaultDataUpType: "+Y";
+			setDefaultIntensityRotationAlpha: 0.;
+			setDefaultIntensityRotationBeta: 0.;
+			setDefaultIntensityRotationGamma: 0.;
+			setDefaultSymmetry: "No Symmetry";
+			setDefaultMaxLatitude: 180.;
+			setDefaultFullSlices: "Yes";
+			setDefaultNumberSlices: 36;
+			setDefaultShowSliceGraphic: "No";
+			setDefaultBinAngularResolution: 5.;
+		} restoreObjectReceiverDefaults: $ReceiverDefaults_2;
+	} ;
+	getPreferencesManager -> $ORAPreferencesManagerObj_0
+	{
+		setDefaultOpticalMaterial: "BK7";
+		setDefaultMediaMaterial: "AIR";
+		setDefaultAllPurposeMaterial: "SILICA";
+		setDefaultMechanicalMaterial: "ALUMINUM";
+		setDefaultSourceMaterial: "AIR";
+		setDefaultSheetMaterial: "ALUMINUM";
+		setDefaultOpticalMaterialCatalog: "SCHOTT";
+		setDefaultMediaMaterialCatalog: "USER";
+		setDefaultAllPurposeMaterialCatalog: "SPECIAL";
+		setDefaultMechanicalMaterialCatalog: "USER";
+		setDefaultSourceMaterialCatalog: "USER";
+		setDefaultSheetMaterialCatalog: "USER";
+		setOptimizationVariableColor: 255;
+		setOptimizationConstraintColor: 16711935;
+		setOptimizationMeritFunctionItemColor: 16711680;
+		setOutsideCellColor: 16776960;
+		setBoundaryCellColor: 65535;
+		setPickupParameterColor: 25855;
+	} ;
+	getOptimizationManager -> $OptimizationManager_0
+	{
+		restoreEngine2: "Standard";
+		setNoiseFloorIntervals: 4;
+		setTargetLimitValue: 0.;
+		setUseMinimumDamping: "No";
+		setScaleVarIncs: "No";
+		restoreMinIterations: 2;
+		restoreMaxIterations: 5;
+		restoreDLSImprovementFactor: 0.05;
+		restoreNTOImprovementFactor: 0.001;
+		getVariableDB -> $VariableDB_0
+		{
+			$UserVariableCollection create -> $UserVariableCollection_0;
+			initObject: $UserVariableCollection_0;
+			$UserVariableCollection_0
+			{
+				setName: "FresnelUDVG";
+				setEnabled: "Yes";
+				setProgID: "Fresnel.Lens";
+				setUserButton1Description: "Build Fresnel Lens";
+				setUserButton2Description: "Refresh Variable Setup";
+				setUserButton3Description: "Not Used";
+				setUserButton4Description: "Apply Current Settings.";
+				$Parameter create -> $Parameter_0
+				{
+					setName: "VAR_VISIBLE_STATE";
+					setDescription: "'1' = Show, '0' = Hide ";
+					setType: "String";
+					setValueStr: "Curvature=0
+ConicConstant=0
+Polynomial_4=0
+Polynomial_6=0
+Polynomial_8=0
+Polynomial_10=0
+Polynomial_12=0
+Polynomial_14=0
+Polynomial_16=0
+Polynomial_18=0
+Polynomial_20=0
+Thickness=0
+Height=0
+Rect_Width=0
+BeaconRadius=0
+GrooveDepth=0
+GrooveWidth=0
+X=0
+Y=0
+Z=0
+Alpha=0
+Beta=0
+Gamma=0
+Draft_A=0
+Draft_B=0
+RearCurvature=0
+RearConic=0
+TIRstartAngle=0
+FocalPoint=0
+FilletRadius=0
+";
+				} restoreParameter: $Parameter_0;
+				$Parameter create -> $Parameter_1
+				{
+					setName: "PARAMETER_LIST";
+					setDescription: "All Parameters ";
+					setType: "String";
+					setValueStr: "FresnelName=Airport_Beacon; 
+FresnelMaterial=K6250_Aviation_Red; 
+LensType=Beacon; [Regular (R), Beacon (B), or Extruded (E)]
+LensShape=Rectangular; [Circular (C) or Rectangular (R)]
+EquiDepth_Space=1; [1 - Equi-Depth, 0 - Equi-Space]
+MakePlanesAbsorbing=0; [0 - No, 1 - Planar surfaces are absorbing]
+AlignAtTop=0; [0 - Align at top, 1 - Align at bottom]
+MaxNumberOfFacets=1000; 
+StepAngle=0.5; Positive value to control profile accuracy.  0.5 is good default
+AssignFresnelLoss=1; Turn On Fresnel Loss if UseLTDefaultSurfaceProperties=0
+UseRefractOnly=1; Transmissive-Only if UseLTDefaultSurfaceProperties=0
+UseLTDefaultSurfaceProperties=0; Use the LT Preferences
+UseThinFresnel=0; Use the LT ideal surface property
+OtherSide=1; Aim on Smooth Side of Lens
+ProfileType=Polygon; Polygon or Spline Interpolation
+FilletControl=3; Control for how many points are used for each fillet
+UseNormalizingRadius=1; flag to control use of UseNormalizingRadius
+";
+				} restoreParameter: $Parameter_1;
+				$Parameter create -> $Parameter_2
+				{
+					setName: "ALL_VARIABLES_LIST";
+					setDescription: "All Variables";
+					setType: "String";
+					setValueStr: "Curvature=0.0405176535416481
+ConicConstant=-1
+Polynomial_4=0
+Polynomial_6=0
+Polynomial_8=0
+Polynomial_10=0
+Polynomial_12=0
+Polynomial_14=0
+Polynomial_16=0
+Polynomial_18=0
+Polynomial_20=0
+Thickness=5
+Height=75
+Rect_Width=30
+BeaconRadius=50
+GrooveDepth=2
+GrooveWidth=10
+X=0
+Y=0
+Z=0
+Alpha=0
+Beta=0
+Gamma=0
+Draft_A=0.5
+Draft_B=0
+RearCurvature=0
+RearConic=-1
+TIRstartAngle=38
+FocalPoint=50.2396522168457
+FilletRadius=0
+";
+				} restoreParameter: $Parameter_2;
+				setReconnect: 1;
+			} restoreObject: $UserVariableCollection_0;
+			setShowParticipatingOnly: "No";
+			setForceComputingIncrements: "No";
+			setMaximumIterationForIncrementCalc: 10;
+		} ;
+		setResultsValid: 0;
+		setShowMinorCycleUpdates: "No";
+		setWarnUserAboutRandomSeedControl: "Yes";
+		setUseNoiseFloorForTermination: "Yes";
+		setEvalNoiseFloorWhenStartingOpt: "Yes";
+		setNoiseFloorMultiplier: 1.;
+		setBackOutVariableChangesWithUndo: "Yes";
+		setRequireRayOnReceiver: "Yes";
+		setPlotMeritFunctionLogScale: "No";
+		setCurrentInitialStateIteration: 0;
+		setBoundedVariableHandler: "Treat As Constraint";
+		restoreIncrementConversionFactorDLSToNTO: 3.;
+		restoreConvertIncrementsWhenChangingEngine: "Yes";
+	} ;
+	getPickupManager -> $PickupManager_0
+	{
+		$ParametricControlsGroup create -> $ParametricControlsGroup_0;
+		initRestoreParametricControlsGroup: $ParametricControlsGroup_0;
+		$ParametricControlsGroup_0
+		{
+			setName: "root";
+			$AliasGroup create -> $AliasGroup_0;
+			initRestoreAliasGroup: $AliasGroup_0;
+			$AliasGroup_0
+			{
+				setName: "Aliases";
+			} restoreAliasGroup: $AliasGroup_0;
+			$ExpressionGroup create -> $ExpressionGroup_0;
+			initRestoreExpressionGroup: $ExpressionGroup_0;
+			$ExpressionGroup_0
+			{
+				setName: "Parametric Expressions";
+			} restoreExpressionGroup: $ExpressionGroup_0;
+			$PickupGroup create -> $PickupGroup_0;
+			initRestorePickupGroup: $PickupGroup_0;
+			$PickupGroup_0
+			{
+				setName: "Pickups";
+			} restorePickupGroup: $PickupGroup_0;
+			$UserDataGroup create -> $UserDataGroup_0;
+			initRestoreUserDataGroup: $UserDataGroup_0;
+			$UserDataGroup_0
+			{
+				setName: "User Data";
+			} restoreUserDataGroup: $UserDataGroup_0;
+		} restoreParametricControlsGroup: $ParametricControlsGroup_0;
+	} ;
+	$UIProxyManager create -> $UIProxyManager_0
+	{
+		$IntensityDataMeshChartProxy create -> $IntensityDataMeshChartProxy_0
+		{
+			setName: "IntensityChart_2";
+			setAppearance: "﻿<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<Chart3DSettings xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">
+  <Settings>
+    <TitleText>
+      <ValueUD>Title</ValueUD>
+      <Mode>SystemDefault</Mode>
+    </TitleText>
+    <MainBackgroundColor>White</MainBackgroundColor>
+    <TitleColor>Black</TitleColor>
+    <TitleFont>
+      <Style>Regular</Style>
+      <Size>10</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </TitleFont>
+  </Settings>
+  <Slices>
+    <Y>0</Y>
+    <X>0</X>
+    <SlicesLayout>BottomRight</SlicesLayout>
+  </Slices>
+  <Histogram>
+    <ShowHistogram>Histogram</ShowHistogram>
+  </Histogram>
+  <ValueAxis>
+    <Visible>true</Visible>
+    <AxisColor>Black</AxisColor>
+    <LabelFont>
+      <Style>Regular</Style>
+      <Size>8</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </LabelFont>
+    <TitleFont>
+      <Style>Regular</Style>
+      <Size>9</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </TitleFont>
+    <Ordinal>false</Ordinal>
+    <ScaleStep>
+      <ValueUD>1</ValueUD>
+      <Mode>Auto</Mode>
+    </ScaleStep>
+    <ScaleLocation>Auto</ScaleLocation>
+    <ScaleDirection>Normal</ScaleDirection>
+    <ScaleType>Linear</ScaleType>
+    <LimitAxisRange>true</LimitAxisRange>
+    <MaxLimit>
+      <ValueUD>1</ValueUD>
+      <Mode>Auto</Mode>
+    </MaxLimit>
+    <MinLimit>
+      <ValueUD>0</ValueUD>
+      <Mode>Auto</Mode>
+    </MinLimit>
+    <TitleAngle>0</TitleAngle>
+    <TitleLocation>Center</TitleLocation>
+    <TitleOffset>0</TitleOffset>
+    <TitleText>
+      <ValueUD>Candela</ValueUD>
+      <Mode>SystemDefault</Mode>
+    </TitleText>
+  </ValueAxis>
+  <YAxis>
+    <Visible>true</Visible>
+    <AxisColor>Black</AxisColor>
+    <LabelFont>
+      <Style>Regular</Style>
+      <Size>8</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </LabelFont>
+    <TitleFont>
+      <Style>Regular</Style>
+      <Size>9</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </TitleFont>
+    <Ordinal>false</Ordinal>
+    <ScaleStep>
+      <ValueUD>30</ValueUD>
+      <Mode>CustomStep</Mode>
+    </ScaleStep>
+    <ScaleLocation>Auto</ScaleLocation>
+    <ScaleDirection>Normal</ScaleDirection>
+    <ScaleType>Linear</ScaleType>
+    <LimitAxisRange>true</LimitAxisRange>
+    <MaxLimit>
+      <ValueUD>1</ValueUD>
+      <Mode>Auto</Mode>
+    </MaxLimit>
+    <MinLimit>
+      <ValueUD>0</ValueUD>
+      <Mode>Auto</Mode>
+    </MinLimit>
+    <TitleAngle>0</TitleAngle>
+    <TitleLocation>Center</TitleLocation>
+    <TitleOffset>0</TitleOffset>
+    <TitleText>
+      <ValueUD>V, deg</ValueUD>
+      <Mode>SystemDefault</Mode>
+    </TitleText>
+  </YAxis>
+  <XAxis>
+    <Visible>true</Visible>
+    <AxisColor>Black</AxisColor>
+    <LabelFont>
+      <Style>Regular</Style>
+      <Size>8</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </LabelFont>
+    <TitleFont>
+      <Style>Regular</Style>
+      <Size>9</Size>
+      <GraphicsUnit>Point</GraphicsUnit>
+      <FontFamily>Arial</FontFamily>
+    </TitleFont>
+    <Ordinal>false</Ordinal>
+    <ScaleStep>
+      <ValueUD>30</ValueUD>
+      <Mode>CustomStep</Mode>
+    </ScaleStep>
+    <ScaleLocation>Auto</ScaleLocation>
+    <ScaleDirection>Normal</ScaleDirection>
+    <ScaleType>Linear</ScaleType>
+    <LimitAxisRange>true</LimitAxisRange>
+    <MaxLimit>
+      <ValueUD>1</ValueUD>
+      <Mode>Auto</Mode>
+    </MaxLimit>
+    <MinLimit>
+      <ValueUD>0</ValueUD>
+      <Mode>Auto</Mode>
+    </MinLimit>
+    <TitleAngle>0</TitleAngle>
+    <TitleLocation>Center</TitleLocation>
+    <TitleOffset>0</TitleOffset>
+    <TitleText>
+      <ValueUD>H, deg</ValueUD>
+      <Mode>SystemDefault</Mode>
+    </TitleText>
+  </XAxis>
+  <Raster>
+    <SurfaceFillColor>Gold</SurfaceFillColor>
+    <SurfaceQuality>Medium</SurfaceQuality>
+    <PerspectiveView>false</PerspectiveView>
+    <EnableLighting>false</EnableLighting>
+    <DrawFlat>false</DrawFlat>
+    <SmoothColors>false</SmoothColors>
+    <FrameColorMode>Uniform</FrameColorMode>
+    <SurfaceFrameMode>None</SurfaceFrameMode>
+    <FrameMode>None</FrameMode>
+    <Region>
+      <RegionColor>Black</RegionColor>
+      <Visible>true</Visible>
+      <LineWidth>1</LineWidth>
+      <RegionTransparency>80</RegionTransparency>
+    </Region>
+    <AspectRatio>
+      <YUserDefined>1</YUserDefined>
+      <XUserDefined>1</XUserDefined>
+      <AspectRatioMode>Auto</AspectRatioMode>
+    </AspectRatio>
+    <Walls>
+      <StripeColor>Lavender</StripeColor>
+      <StripeVisible>ValueStripes</StripeVisible>
+      <AxisGridLines>false</AxisGridLines>
+      <ValueGridLines>true</ValueGridLines>
+      <WallColorPolarSurface>LightBlue</WallColorPolarSurface>
+      <WallColorCartesian3D>White</WallColorCartesian3D>
+      <Width>0</Width>
+      <Visible>true</Visible>
+    </Walls>
+    <PolarOrientation>Up</PolarOrientation>
+    <View>
+      <RotationPolarSurface>0</RotationPolarSurface>
+      <RotationPolar3D>0</RotationPolar3D>
+      <RotationPolar2D>0</RotationPolar2D>
+      <RotationCartesian3D>0</RotationCartesian3D>
+      <AzimuthPolarSurface>-30</AzimuthPolarSurface>
+      <AzimuthPolar3D>-50</AzimuthPolar3D>
+      <AzimuthPolar2D>-270</AzimuthPolar2D>
+      <AzimuthCartesian3D>0</AzimuthCartesian3D>
+      <ElevationPolarSurface>50</ElevationPolarSurface>
+      <ElevationPolar3D>-40</ElevationPolar3D>
+      <ElevationPolar2D>-90</ElevationPolar2D>
+      <ElevationCartesian3D>90</ElevationCartesian3D>
+    </View>
+    <ColorScheme>
+      <UserColorMap>
+        <ValueType>Percent</ValueType>
+      </UserColorMap>
+      <NoDataFillColor>Black</NoDataFillColor>
+      <MaxLimitUserDefined>130.882</MaxLimitUserDefined>
+      <MinLimitUserDefined>0</MinLimitUserDefined>
+      <ColorLimitType>SystemDefault</ColorLimitType>
+      <ColorLevel>21</ColorLevel>
+      <ColorMap>Rainbow</ColorMap>
+    </ColorScheme>
+    <ChartType>Cartesian3D</ChartType>
+    <FillMode>Zone</FillMode>
+  </Raster>
+</Chart3DSettings>";
+			setTarget: $ORAIntensityDataMeshObj_0;
+		} restoreReceiverDataMeshChartProxy: $IntensityDataMeshChartProxy_0;
+	} restoreUIProxyManager: $UIProxyManager_0;
+	getPhotorealManager -> $PhotorealManager_0
+	{
+	} ;
+	$ORA3DCADModelObj create -> $ORA3DCADModelObj_0
+	{
+		setElementDisplayQuality: "High";
+		$ORA3DCADViewObj create -> $ORA3DCADViewObj_0
+		{
+			setParentWidget: null;
+			setViewPositionAndSize:  { 2 21 1457 829  } ;
+			restoreDisplayMask: "11111111011111111110110111111101";
+			setSelectMask: "11111111111111111111111111111111";
+			setBackgroundRed: 255;
+			setBackgroundGreen: 255;
+			setBackgroundBlue: 255;
+			setForegroundRed: 0;
+			setForegroundGreen: 0;
+			setForegroundBlue: 0;
+			setRubberbandRed: 255;
+			setRubberbandGreen: 0;
+			setRubberbandBlue: 0;
+			setSelectRed: 150;
+			setSelectGreen: 0;
+			setSelectBlue: 150;
+			setCommitColors: 1;
+			setGradientBackground: 0;
+			setLineAntiAliasing: 0;
+			setDrawAnnotation: 0;
+			getPaneAt: 0 -> $ORANew3DGraphicsPaneObj_0
+			{
+				setId: 0;
+				setIsCurrent: 0;
+				setActive: 1;
+				setPaneName: "Top View";
+				setWindow:  { -126.1058738365602 141.5254787445068 126.1058738365602 -40.47597160339356  } ;
+				setWindowPos:  { 0 0 370 267  } ;
+				setModelViewMatrix:  { -1. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 1.  } ;
+				setLightVector:  { 0. 1. 0.  } ;
+				setViewDepth: 0.;
+			} ;
+			getPaneAt: 1 -> $ORANew3DGraphicsPaneObj_1
+			{
+				setId: 1;
+				setIsCurrent: 0;
+				setActive: 1;
+				setPaneName: "Isometric View";
+				setWindow:  { -170.7601942840452 177.7797497708299 242.2129860190849 -119.427363816598  } ;
+				setWindowPos:  { 370 0 741 267  } ;
+				setModelViewMatrix:  { -0.8449787497520447 -0.1821740418672562 0.5028150677680969 0. -0.06241950765252113 0.967362105846405 0.245587632060051 0. -0.5311439037322998 0.176131084561348 -0.8287718296051025 0. 0. 0. 0. 1.  } ;
+				setLightVector:  { -0.3808350602187632 0.8425730317404789 -0.3808350602187632  } ;
+				setViewDepth: 0.;
+			} ;
+			getPaneAt: 2 -> $ORANew3DGraphicsPaneObj_2
+			{
+				setId: 2;
+				setIsCurrent: 0;
+				setActive: 1;
+				setPaneName: "Front View";
+				setWindow:  { -75.58111445109049 101.471736907959 176.6306215922038 -80.52970504760744  } ;
+				setWindowPos:  { 0 267 370 534  } ;
+				setModelViewMatrix:  { 0. 0. -1. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1.  } ;
+				setLightVector:  { -0.8192319205190405 0.5734623443633283 5.016183075608629e-017  } ;
+				setViewDepth: 0.;
+			} ;
+			getPaneAt: 3 -> $ORANew3DGraphicsPaneObj_3
+			{
+				setId: 3;
+				setIsCurrent: 1;
+				setActive: 1;
+				setPaneName: "Right Side View";
+				setWindow:  { -148.0492508703626 90.18939555405041 149.5197745912571 -70.63416935192385  } ;
+				setWindowPos:  { 0 0 1310 708  } ;
+				setModelViewMatrix:  { 0.7434365153312683 0.1170686930418015 -0.658485472202301 0. -0.6688079237937927 0.1273485422134399 -0.7324515581130981 0. -0.001890558749437332 0.9849280714988709 0.1729714274406433 0. 0. 0. 0. 1.  } ;
+				setLightVector:  { -0.8192319205190405 0.5734623443633283 0.  } ;
+				setViewDepth: -0.;
+			} ;
+			getUCS -> $ORA3DUserCoordinateSystemObj_0
+			{
+				setOrigin:  { 0. 0. 0.  } ;
+				setOrientation: [3,3] { 1. 0. 0. 0. 1. 0. 0. 0. 1.  } ;
+			} ;
+			setFirstPane: 3;
+			setLastPane: 4;
+			setCurrentPane: 3;
+			clickToSwitchPanes: 1;
+			setDisplayGridType: "DOT";
+			setGridDisplayed: 0;
+			setDisplayGrid:  { 1. 1. 0. 0.  } ;
+			setGridLabelsDisplayed: 0;
+			setHiliteInterval:  { 5 5  } ;
+			setGridSnap: 1;
+			setSnapGrid:  { 0.1 0.1 0. 0.  } ;
+			setUCSDisplayStyle: "OpenArrowHead";
+			restoreShowRARRays: 1;
+			getColorComponent: 1 -> $ORAColorComponentObj_9
+			{
+				setRed: 128;
+				setGreen: 128;
+				setBlue: 255;
+				setAlpha: 0.6000000238418579;
+				setShininess: 38.40000152587891;
+			} ;
+			getColorComponent: 2 -> $ORAColorComponentObj_10
+			{
+				setRed: 192;
+				setGreen: 192;
+				setBlue: 192;
+				setAlpha: 1.;
+				setShininess: 89.59999847412109;
+			} ;
+			getColorComponent: 3 -> $ORAColorComponentObj_11
+			{
+				setRed: 128;
+				setGreen: 128;
+				setBlue: 255;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} ;
+			getColorComponent: 4 -> $ORAColorComponentObj_12
+			{
+				setRed: 140;
+				setGreen: 255;
+				setBlue: 255;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} ;
+			getColorComponent: 5 -> $ORAColorComponentObj_13
+			{
+				setRed: 255;
+				setGreen: 0;
+				setBlue: 128;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} ;
+			getColorComponent: 6 -> $ORAColorComponentObj_14
+			{
+				setRed: 187;
+				setGreen: 166;
+				setBlue: 13;
+				setAlpha: 1.;
+				setShininess: 38.40000152587891;
+			} ;
+			getColorComponent: 7 -> $ORAColorComponentObj_15
+			{
+				setRed: 128;
+				setGreen: 0;
+				setBlue: 0;
+				setAlpha: 1.;
+				setShininess: 89.59999847412109;
+			} ;
+			getColorComponent: 8 -> $ORAColorComponentObj_16
+			{
+				setRed: 255;
+				setGreen: 155;
+				setBlue: 64;
+				setAlpha: 0.6000000238418579;
+				setShininess: 85.33376312255859;
+			} ;
+			setRenderMode: "TRANSLUCENT";
+			setDrawMode: "By Refract Mode";
+			setXViewAngle: 5.;
+			setYViewAngle: 5.;
+			setZViewAngle: 5.;
+		} restoreView: $ORA3DCADViewObj_0;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_0
+		{
+			setDatabaseEntity: $ORACylinderSourceObj_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_0;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_1
+		{
+			setDatabaseEntity: $ORAFarFieldReceiverObj_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_1;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_2
+		{
+			setDatabaseEntity: $ORAIntensityDataMeshObj_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_2;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_3
+		{
+			setDatabaseEntity: $ORAIntensityScatterMeshObj_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_3;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_4
+		{
+			setDatabaseEntity: $ORAForwardStartObj_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_4;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_5
+		{
+			setDatabaseEntity: $PRRAmbientLight_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_5;
+		$ORA3DCADEntityObj create -> $ORA3DCADEntityObj_6
+		{
+			setDatabaseEntity: $SweptSolid_0;
+			setBlanked: 0;
+		} restoreModelEntity: $ORA3DCADEntityObj_6;
+	} restoreModel: $ORA3DCADModelObj_0;
+	restoreShowRayPreviewAsPoints: "No";
+	restoreShowRARRaysAsPoints: "No";
+} ;
