@@ -1,2 +1,2 @@
 creat in feature1
-add a line on the last line
+chenge in master: modify conflict
