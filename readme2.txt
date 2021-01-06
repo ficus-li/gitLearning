@@ -1,2 +1,2 @@
 creat in feature1
-add a line on the last line
+change in feature1---modify conflict
