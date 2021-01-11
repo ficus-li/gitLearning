@@ -7,3 +7,6 @@ new a local store related with remote
 test remote subordinate branch
 
 hello world!!
+
+
+haihaihai
